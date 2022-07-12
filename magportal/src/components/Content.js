@@ -57,7 +57,6 @@ function Hero(){
     const [book, setBook] = useState(data)
 
     const bookElements = book.map( item => <BookPresentation key={item.title} title = {item.title} author = {item.author} img={item.img} link ={item.link}/>)
-    console.log(book[0].img)
     return(
         <div className="hero">
             <div className="hero-intro">
@@ -65,7 +64,8 @@ function Hero(){
             <p className="slogan"><em>Empowering Black People!</em></p>
             </div>
             <hr/>
-            {bookElements}
+            {/*{bookElements}*/}
+
         </div>
     )
 }
