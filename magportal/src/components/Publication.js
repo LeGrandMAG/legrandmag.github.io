@@ -4,15 +4,15 @@ import mytext from "../assets/img/my_text.png"
 export default function Publication(){
     return(
     <div>
-        <div class = "publication pd-t">
+        <div className = "publication pd-t">
             <img id="title"src={title} alt=""/>
             <img id="mytext" src={mytext} alt=""/>
         </div>
 
-        <div class="publication translation">
+        <div className="publication translation">
             <h6 style={{ fontSize: "1vh"}}> ( English translation )</h6>
             <h3 id="racism">
-            <b>Racisms are all disgusting!</b>
+            <b>“ Racisms are all disgusting! ”</b>
             </h3>
             <p>In 2017, I was attending a Youth Program for the UN’s Sustainable Development Goals. That day was special for me, we were going to visit the DMZ. As it was an official schedule of our program, we had to wear black pants and white tops as our uniforms. I will always remember when my teammate told me: “You won’t have a problem with our team’s uniform. You are already black; you don’t need to wear black pants”. I was disgusted. It was my first genuine experience with racisms, the first time I really understood that I am different. In fact, we are all different in many aspects: age, height, weight, gender, and skin. Your skin color and mine are clearly not the same. But I have no doubt that we have different skin colors because every individual has a different amount of melanin in their body and nothing else. Thankfully, science and civilization have made us understand that even a huge difference in the amount of melanin is not enough to establish a hierarchy among us and I am really proud of all the progress we have made against racisms so far.</p>
 

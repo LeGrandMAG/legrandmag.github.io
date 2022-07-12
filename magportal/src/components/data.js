@@ -1,3 +1,9 @@
-const fonts = [
-    "lato", "muller", "raleway", "monserat"
+import pp from "../assets/books/precolonialBlackAfrica.jpg"
+export default  [
+    {
+        title:"Precolonial Black Africa",
+        author:"Cheikh Anta Diop",
+        img: pp,
+        link: "https://drive.google.com/file/d/1qgEQjD8ZRZaY73DSbwOXe-8lcPQM8Gmp/view?usp=sharing"
+    }
 ]

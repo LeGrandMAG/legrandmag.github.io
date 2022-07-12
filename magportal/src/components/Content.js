@@ -1,15 +1,16 @@
-import photo from "../"
+import data from "./data"
 
+import {useState} from "react"
 
 /*This is the nav element of the app*/
 
 function NavElement(props){
     return(
-        <liv className="navElement">
+        <div className="navElement">
             <a href={props.link}>
                 {props.name}
             </a>
-        </liv>
+        </div>
     )
 }
 
@@ -33,7 +34,7 @@ function Navbar(){
                     link = "#"
                 />
             </ul>
-            <p id="myname"></p>
+           { /*<p id="myname">magloire mukendi</p> */}
         </nav>
     )
 }
@@ -42,8 +43,10 @@ function Navbar(){
 function BookPresentation(props){
     return(
         <div className="book--content">
-            <h3>{props.title} title</h3>
-            <img className="book-img"src=""></img>
+            <h6>{props.title}</h6>
+            <p>by {props.author}</p>
+            <img alt={props.title} className="book-img"src={props.img}/>
+            <a href={props.link} target="_blank">DOWNLOAD IT HERE</a>
 
         </div>
     )
@@ -51,11 +54,18 @@ function BookPresentation(props){
 
 
 function Hero(){
+    const [book, setBook] = useState(data)
+
+    const bookElements = book.map( item => <BookPresentation key={item.title} title = {item.title} author = {item.author} img={item.img} link ={item.link}/>)
+    console.log(book[0].img)
     return(
         <div className="hero">
-            <p >Welcome to my portfolio website.</p>
+            <div className="hero-intro">
+
+            <p className="slogan"><em>Empowering Black People!</em></p>
+            </div>
             <hr/>
-            <BookPresentation/>
+            {bookElements}
         </div>
     )
 }
@@ -67,31 +77,33 @@ function Footer(){
     return(
         <footer className ="footer">
             <hr/>
-            <a href="https://www.instagram.com/mag.legrand/" target="_blank">
+            <div>
+                <a href="https://www.instagram.com/mag.legrand/" target="_blank">
                     <span>                        
-                        <i class="fa fa-instagram"></i>
+                        <i className="fa fa-instagram"></i>
                     </span>
                 </a>
                 <a href="https://www.linkedin.com/in/magmukendi/" target="_blank">
                     <span>                        
-                        <i class="fa fa-linkedin"></i>
+                        <i className="fa fa-linkedin"></i>
                     </span>
                 </a>
                 <a href="https://github.com/LeGrandMAG" target="_blank">
                     <span>                        
-                        <i class="fa fa-github"></i>
+                        <i className="fa fa-github"></i>
                     </span>
                 </a>
                 <a href="https://twitter.com/MAGMukendi" target="_blank">
                     <span>                        
-                        <i class="fa fa-twitter"></i>
+                        <i className="fa fa-twitter"></i>
                     </span>
                 </a>
                 <a href="https://www.facebook.com/mag.mukendi" target="_blank">
                     <span>                        
-                        <i class="fa fa-facebook"></i>
+                        <i className="fa fa-facebook"></i>
                     </span>
                 </a>
+            </div>
                 <p >© Mag Mukendi 2022</p>
         </footer>
     )

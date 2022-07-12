@@ -42,32 +42,67 @@ nav ul{
 
 }
 #myname{
-  padding: 30px 15px;
+  padding: 3px 15px;
   font-size: 0.7rem;
   font-family: "lato";
 }
 
 /* HERO ==================================*/
+.hero{
+  font-family: "lato";
+  margin: auto;
+}
 .hero p{
   font-size: 1.4vh;
 
 }
+.slogan{
+  padding: 1.5rem 0rem;
+  margin:
+}
 .hero hr{
   margin:auto;
-  margin-top: 3rem;
   width: 45vw;
+}
+
+.hero-intro{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:70%;
 }
 /*Book===========================*/
 
 .book--content{
-  margin-top: 5vh;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
 }
-.book--img{
-  width:100px;
-  border: 2px solid black;
+.book-img{
+  width:65%;
+  border: 5px ridge white;
   height: auto;
 }
+.book--content a{
+  text-decoration: none;
+  font-size: 0.65rem;
+  cursor: pointer;
+  margin: 1rem 0rem 1rem 0rem;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
 
+.book--content a:hover{
+  background-color: rgb(40,40,40);
+}
 /*PUBLICATION */
 
 
@@ -87,20 +122,18 @@ nav ul{
 
 }
 #racism{
-  margin:1vh;
-  font-size: 6vw;
+  margin: 0vh 0vw 4vh 0vw;
+  font-size: 2rem;
   text-align: center;
 }
 
 .publication p{
-  font-size: 3vw;
+  font-size: 0.8rem;
 }
 .publication img{
 
-  width: 80%;
+  width: 100%;
   margin: auto;
-
-
 }
 
 
@@ -127,10 +160,12 @@ nav ul{
 }
 
 .footer span:hover{
-  color: #1781C2
+  color: #1781C2;
+  opacity: 1;
 }
 .footer p{
   margin: 1rem 0rem 0.5rem 0rem;
   font-size: 8px;
 }
+
 
