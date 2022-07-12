@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Content';
-
+import {Hero,BookPresentation, Navbar, Footer} from './components/Content';
+import Publication from './components/Publication';
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Hero/>
+      <Publication/>
+      <Footer/>
     </div>
   )
 }

@@ -52,3 +52,85 @@ nav ul{
   font-size: 1.4vh;
 
 }
+.hero hr{
+  margin:auto;
+  margin-top: 3rem;
+  width: 45vw;
+}
+/*Book===========================*/
+
+.book--content{
+  margin-top: 5vh;
+}
+.book--img{
+  width:100px;
+  border: 2px solid black;
+  height: auto;
+}
+
+/*PUBLICATION */
+
+
+.publication{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: white;
+}
+.translation{
+  padding: 3vh 8vw 3vh 8vw;
+  text-align: justify;
+  width: 100%;
+
+}
+#racism{
+  margin:1vh;
+  font-size: 6vw;
+  text-align: center;
+}
+
+.publication p{
+  font-size: 3vw;
+}
+.publication img{
+
+  width: 80%;
+  margin: auto;
+
+
+}
+
+
+
+/*Footer ========*/
+
+.footer{
+  position: absolute;
+  bottom: -50;
+  width:100vw;
+  padding: 2rem 0rem 2rem 0rem;
+
+}
+
+.footer hr{
+  width: 35%;
+  margin:auto;
+  margin-bottom: 1rem;
+}
+.footer span{
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+}
+
+.footer span:hover{
+  color: #1781C2
+}
+.footer p{
+  margin: 1rem 0rem 0.5rem 0rem;
+  font-size: 8px;
+}
+
