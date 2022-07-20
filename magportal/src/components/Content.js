@@ -1,15 +1,13 @@
-import data from "./data"
-
-import {useState} from "react"
+import {Link} from 'react-router-dom'
 
 /*This is the nav element of the app*/
 
 function NavElement(props){
     return(
         <div className="navElement">
-            <a href={props.link}>
+            <Link className ="anchor" to={"/"+ props.link}>
                 {props.name}
-            </a>
+            </Link>
         </div>
     )
 }
@@ -22,16 +20,16 @@ function Navbar(){
             <ul>
                 <NavElement 
                     name= "HOME"
-                    link = "#"
+                    link = ""
                 />
                 <NavElement 
                     name= "CULTURE"
-                    link = "#"
+                    link = "culture"
                 />
                 
                 <NavElement 
                     name= "PROJECTS"
-                    link = "#"
+                    link = "projects"
                 />
             </ul>
            { /*<p id="myname">magloire mukendi</p> */}
@@ -39,36 +37,8 @@ function Navbar(){
     )
 }
 
-/* This is a component to represent each book */
-function BookPresentation(props){
-    return(
-        <div className="book--content">
-            <h6>{props.title}</h6>
-            <p>by {props.author}</p>
-            <img alt={props.title} className="book-img"src={props.img}/>
-            <a href={props.link} target="_blank">DOWNLOAD IT HERE</a>
-
-        </div>
-    )
-}
 
 
-function Hero(){
-    const [book, setBook] = useState(data)
-
-    const bookElements = book.map( item => <BookPresentation key={item.title} title = {item.title} author = {item.author} img={item.img} link ={item.link}/>)
-    return(
-        <div className="hero">
-            <div className="hero-intro">
-
-            <p className="slogan"><em>Empowering Black People!</em></p>
-            </div>
-            <hr/>
-            {/*{bookElements}*/}
-
-        </div>
-    )
-}
 
 
 
@@ -111,4 +81,4 @@ function Footer(){
 }
 
 
-export  {Hero, BookPresentation, Navbar, Footer}
+export  {Navbar, Footer}

@@ -12,7 +12,7 @@
 
 nav{
   width:100%;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 nav ul{
   margin: auto;
@@ -25,7 +25,7 @@ nav ul{
 
 }
 
-.navElement a{
+.navElement .anchor{
   text-decoration: none;
   color: black;
   padding: 5px;
@@ -34,7 +34,7 @@ nav ul{
   margin: 5px;
 }
 
-.navElement a:hover{
+.navElement .anchor:hover{
   opacity: 1;
   color: white;
   background-color: black;

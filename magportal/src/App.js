@@ -1,8 +1,17 @@
+import {Routes, Route, Link} from 'react-router-dom'
+import {Hero,BookPresentation, Navbar, Footer} from './components/Content';
+import {useState} from "react"
+
 import logo from './logo.svg';
 import './App.css';
-import {Hero,BookPresentation, Navbar, Footer} from './components/Content';
-import Publication from './components/Publication';
-import {useState} from "react"
+import Publication from './Page/Publication';
+
+import Home from './Page/Home'
+import Projects from './Page/Projects'
+import Culture from './Page/Culture'
+
+
+
 import {Wrapper, Status} from "@googlemaps/react-wrapper"
 function App() {
   const [state, setState] = useState()
@@ -26,8 +35,13 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Hero/>
-      <pre>{JSON.stringify(love['name'],null,2)}</pre>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/publication/1" element={<Publication/>}/>
+        <Route path="/culture/" element={<Culture/>}/>
+
+      </Routes>
       <Footer/>
     </div>
   )
