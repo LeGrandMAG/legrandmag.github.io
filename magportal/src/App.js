@@ -26,9 +26,7 @@ function App() {
 
   const url2 = "https://swapi.dev/api/people/1"
 
-  fetch(url2)
-  .then(res => res.json())
-  .then(data => love = (data))
+  
   
 
   return (
