@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap');
 
 /* BODY */
@@ -169,3 +170,116 @@ nav ul{
 }
 
 
+
+
+/*===========================PAGE NOT FOUND */ 
+
+
+
+.center-xy {
+  width: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+html, body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+html {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+}
+
+.copy-container {
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 24px;
+  letter-spacing: .2px;
+  margin: 0;
+}
+
+.handle {
+  background: #ffe500;
+  width: 14px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+  position: absolute;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+.center-xy {
+  width: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  position: relative
+}
+
+.copy-container {
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 24px;
+  letter-spacing: .2px;
+  margin: 0;
+}
+
+.handle {
+  background: #ffe500;
+  width: 14px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+  position: absolute;
+}
+
+#cb-replay {
+  fill: #666;
+  width: 20px;
+  margin: 15px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: inherit;
+  cursor: pointer;
+
+  &:hover {
+    fill: #888;
+  }
+}

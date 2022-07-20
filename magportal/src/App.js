@@ -9,6 +9,7 @@ import Publication from './Page/Publication';
 import Home from './Page/Home'
 import Projects from './Page/Projects'
 import Culture from './Page/Culture'
+import NotFound from './Page/Notfound'
 
 
 
@@ -38,8 +39,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/publication/1" element={<Publication/>}/>
+        <Route path="/publication" element={<Publication/>}/>
         <Route path="/culture/" element={<Culture/>}/>
+        <Route path="*" element={<NotFound/>}/>
+
 
       </Routes>
       <Footer/>
