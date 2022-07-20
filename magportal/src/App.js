@@ -19,11 +19,9 @@ function App() {
   const key ="AIzaSyB4eDBdG6YnpHEuodh2Wcr3rBIkEJeUowg"
   const url ="https://maps.googleapis.com/maps/api/js?key="+key
 
-  const love = ""
+
   
-  const render = (status: Status)=>{
-    return <h1>{status}</h1>
-  }
+  
 
 
   const url2 = "https://swapi.dev/api/people/1"
