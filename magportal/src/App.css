@@ -85,7 +85,7 @@ nav ul{
   margin-top: 4vh;
 }
 .book-img{
-  width:65%;
+  width:30%;
   border: 5px ridge white;
   height: auto;
 }
@@ -148,9 +148,10 @@ nav ul{
 
 }
 
-.footer hr{
+.footer hr, nav hr{
   width: 35%;
   margin:auto;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .footer span{
@@ -169,7 +170,18 @@ nav ul{
 }
 
 
-
+/*Project */
+.project-container, .home-container{
+  width: 80vh;
+  margin:auto;
+  margin-top: 3rem;
+  padding: 3rem 0rem 3rem 0rem;
+  border: 1px solid gray;
+  ;
+}
 
 /*===========================PAGE NOT FOUND */ 
 
+p{
+  font-size: 12px;
+}

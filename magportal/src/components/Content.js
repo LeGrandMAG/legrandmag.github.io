@@ -33,6 +33,7 @@ function Navbar(){
                 />
                 
             </ul>
+            <hr/>
            { /*<p id="myname">magloire mukendi</p> */}
         </nav>
     )
@@ -76,7 +77,6 @@ function Footer(){
                 </a>
             </div>
                 <p >© Mag Mukendi 2022</p>
-                {<Link to="/publication"style={{marginTop: "0px", paddingTop:'0px', fontSize:"8px", textDecoration:"none", color:'black'}} href="/pub">.</Link>}
         </footer>
     )
     

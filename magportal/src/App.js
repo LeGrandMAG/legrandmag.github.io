@@ -1,5 +1,5 @@
-import {Routes, Route, Link} from 'react-router-dom'
-import {Hero,BookPresentation, Navbar, Footer} from './components/Content';
+import {Routes, Route} from 'react-router-dom'
+import {BookPresentation, Navbar, Footer} from './components/Content';
 import {useState} from "react"
 
 import logo from './logo.svg';
@@ -10,6 +10,8 @@ import Home from './Page/Home'
 import Projects from './Page/Projects'
 import Culture from './Page/Culture'
 import NotFound from './Page/Notfound'
+import Resume from './Page/Resume'
+
 
 
 
@@ -33,10 +35,12 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/publication" element={<Publication/>}/>
-        <Route path="/culture/" element={<Culture/>}/>
+        <Route path='' element={<Home/>}/>
+        <Route path="projects" element={<Projects/>}/>
+        <Route path="publication" element={<Publication/>}/>
+        <Route path="culture" element={<Culture/>}/>
+        <Route path="resume" element={<Resume/>}/>
+
         <Route path="/*" element={<NotFound/>}/>
 
       </Routes>
