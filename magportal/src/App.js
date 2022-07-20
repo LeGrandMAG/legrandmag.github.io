@@ -35,10 +35,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/pub" element={<Publication/>}/>
+        <Route path="/publication" element={<Publication/>}/>
         <Route path="/culture/" element={<Culture/>}/>
-        <Route path="*" element={<NotFound/>}/>
-
+        <Route path="/*" element={<NotFound/>}/>
 
       </Routes>
       <Footer/>

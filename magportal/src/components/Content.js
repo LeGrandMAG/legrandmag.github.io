@@ -31,6 +31,7 @@ function Navbar(){
                     name= "PROJECTS"
                     link = "projects"
                 />
+                
             </ul>
            { /*<p id="myname">magloire mukendi</p> */}
         </nav>
@@ -75,7 +76,7 @@ function Footer(){
                 </a>
             </div>
                 <p >© Mag Mukendi 2022</p>
-                {<a style={{marginTop: "0px", paddingTop:'0px', fontSize:"8px", textDecoration:"none", color:'black'}}href="/pub">.</a>}
+                {<Link to="/publication"style={{marginTop: "0px", paddingTop:'0px', fontSize:"8px", textDecoration:"none", color:'black'}} href="/pub">.</Link>}
         </footer>
     )
     
