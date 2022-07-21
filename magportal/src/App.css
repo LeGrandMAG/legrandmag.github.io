@@ -172,7 +172,7 @@ nav ul{
 
 /*Project */
 .project-container, .home-container{
-  width: 80vh;
+  width: 80%;
   margin:auto;
   margin-top: 3rem;
   padding: 3rem 0rem 3rem 0rem;
