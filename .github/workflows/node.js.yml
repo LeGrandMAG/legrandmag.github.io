@@ -22,7 +22,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Deploy
@@ -33,4 +33,3 @@ jobs:
           clean: true
           clean-exclude: |
             CNAME
-            some/*.txt
