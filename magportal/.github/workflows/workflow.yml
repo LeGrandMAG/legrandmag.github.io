@@ -1,4 +1,4 @@
-name : GIthub Pages Deploy
+name : Git git papa deploy
 
 on:  
   push: 
@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Check out repositories code
+        uses: actions/checkout@v3
       
       - name: Install and build
         run: npm install && npm run build
