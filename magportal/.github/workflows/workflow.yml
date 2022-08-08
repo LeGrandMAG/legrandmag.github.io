@@ -1,6 +1,9 @@
 name : GIthub Pages Deploy
 
-on:  [push]
+on:  
+  push: 
+    branches: 
+      - dev
     
 jobs:
   build:
@@ -11,14 +14,14 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       
       - name: Install and build
         run: npm install && npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-actions@4.1.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
           branch: master
-          folder: build
+          publish_dir: ./build
 
