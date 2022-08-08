@@ -3,7 +3,7 @@ name : GIthub Pages Deploy
 on:
   push:
     branches: 
-    - "dev"
+    - dev
 jobs:
   build:
     runs-on: ubuntu-latest
