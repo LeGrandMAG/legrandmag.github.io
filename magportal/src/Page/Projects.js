@@ -1,6 +1,8 @@
 import React from 'react'
 import { Icon } from '@mui/material' 
 import JavascriptIcon from '@mui/icons-material/Javascript';
+import { Link } from "react-router-dom";
+
 function ProjectElement(){
     return(
         <div className="project-el">
@@ -19,12 +21,11 @@ function ProjectElement(){
 function Projects() {
   return (
     <div className="project-container">
-        <br/><p>
-            Component still under construction. I will update this page very soon :)
-        </p>
-
-        
-        
+               
+        <Link className="lili" to="/studio">Portfolio 243 Studio</Link>
+        <a className = "lili" href="https://magmukendi.me/quickymeme">Meme Generator</a>
+        <a className = "lili" href="https://magmukendi.me/wepoPriceCalculator">Wepo Price Calculator</a>
+        <a className = "lili" href="https://magmukendi.me/pianonotes">Piano Notes Player</a>
 
     </div>
   )

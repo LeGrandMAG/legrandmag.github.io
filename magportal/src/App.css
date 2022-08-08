@@ -179,9 +179,54 @@ nav ul{
   border: 1px solid gray;
   ;
 }
-
+.project-container{
+  display: flex;
+  flex-direction: column;
+}
+.lili{
+  color:black; 
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.lili:hover{
+  color:#1781C2;
+}
 /*===========================PAGE NOT FOUND */ 
 
 p{
   font-size: 12px;
+}
+
+/* STUDIO 243 */
+.studio243{
+  max-width: 50%;
+
+  
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  background: rgb(40,40,40);
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  /*box-shadow: 0 5px 10px #ccc;*/
+}
+
+.back-to-top:hover {
+  background: #1781C2;
+}
+
+
+@media (max-width: 450px){
+  .studio243{
+    max-width: 100%;
+  }
 }
