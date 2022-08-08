@@ -1,5 +1,5 @@
 import pp from "../assets/books/precolonialBlackAfrica.jpg"
-export default  [
+export  const x =  [
     {
         title:"Precolonial Black Africa",
         author:"Cheikh Anta Diop",

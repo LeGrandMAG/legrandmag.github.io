@@ -1,8 +1,8 @@
 import {Routes, Route} from 'react-router-dom'
-import {BookPresentation, Navbar, Footer} from './components/Content';
+import { Navbar, Footer} from './components/Content';
 import {useState, useEffect} from "react"
 
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Publication from './Page/Publication';
 
@@ -16,11 +16,11 @@ import Studio243 from './Page/Studio243'
 
 
 
-import {Wrapper, Status} from "@googlemaps/react-wrapper"
+// import {Wrapper, Status} from "@googlemaps/react-wrapper"
 function App() {
-  const [state, setState] = useState()
+  //const [state, setState] = useState()
   const key ="AIzaSyB4eDBdG6YnpHEuodh2Wcr3rBIkEJeUowg"
-  const url ="https://maps.googleapis.com/maps/api/js?key="+key
+  //const url ="https://maps.googleapis.com/maps/api/js?key="+key
 
   const [showButton, setShowButton] = useState(false);
 

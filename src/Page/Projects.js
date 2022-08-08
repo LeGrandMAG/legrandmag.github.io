@@ -1,22 +1,22 @@
 import React from 'react'
-import { Icon } from '@mui/material' 
-import JavascriptIcon from '@mui/icons-material/Javascript';
+//import { Icon } from '@mui/material' 
+//import JavascriptIcon from '@mui/icons-material/Javascript';
 import { Link } from "react-router-dom";
 
-function ProjectElement(){
+/*function ProjectElement(){
     return(
         <div className="project-el">
             
             <h5>Project Name</h5>
             <p>Project Description</p>
-            <a href="#">Link to Project</a>
+            <a href="/solide">Link to Project</a>
             <div>
                 <JavascriptIcon/>
             </div>
             <hr/>
         </div>
     )
-}
+} */
 
 function Projects() {
   return (

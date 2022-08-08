@@ -1,4 +1,4 @@
-import data from "../components/data"
+import {x} from "../components/data"
 import {useState} from "react"
 
 
@@ -17,7 +17,7 @@ function BookPresentation(props){
 
 
 function Culture(){
-    const [book, setBook] = useState(data)
+    const [book, setBook] = useState(x)
 
     const bookElements = book.map( item => <BookPresentation key={item.title} title = {item.title} author = {item.author} img={item.img} link ={item.link}/>)
     return(
