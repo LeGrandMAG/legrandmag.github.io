@@ -16,7 +16,7 @@ function NavElement(props){
 /*This is the main nav bar of the app*/
 function Navbar(){
     return (
-        <nav>
+        <nav className="nav">
             <ul>
                 <NavElement 
                     name= "HOME"
@@ -33,7 +33,6 @@ function Navbar(){
                 />
                 
             </ul>
-            <hr/>
            { /*<p id="myname">magloire mukendi</p> */}
         </nav>
     )

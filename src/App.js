@@ -23,10 +23,11 @@ function App() {
   //const url ="https://maps.googleapis.com/maps/api/js?key="+key
 
   const [showButton, setShowButton] = useState(false);
-
+  const [fixNav, setFixNav] = useState('fixed')
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
+
       if (window.pageYOffset > 300) {
         setShowButton(true);
       } else {
@@ -34,6 +35,8 @@ function App() {
       }
     });
   }, []);
+
+
   
   const scrollToTop = () => {
     window.scrollTo({
@@ -51,7 +54,9 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Routes>
+      <div className="content">
+
+      <Routes >
         <Route path='' element={<Home/>}/>
         <Route path="projects" element={<Projects/>}/>
         <Route path="publication" element={<Publication/>}/>
@@ -63,6 +68,7 @@ function App() {
         <Route path="/*" element={<NotFound/>}/>
 
       </Routes>
+      </div>
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
           &#8679;
