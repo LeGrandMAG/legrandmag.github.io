@@ -30,6 +30,5 @@ jobs:
         with:
           branch: master
           folder: build
-          clean: true
           clean-exclude: |
             CNAME
