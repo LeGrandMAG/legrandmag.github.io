@@ -10,7 +10,6 @@ function Studio243(){
         <div className="hero">
             <div className="hero-intro">
             
-            <p className="slogan"><em>Empowering Black People!</em></p>
             </div>
             <hr/>
             <img className="studio243"src={portfolio}/>

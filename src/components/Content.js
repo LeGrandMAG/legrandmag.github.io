@@ -22,10 +22,10 @@ function Navbar(){
                     name= "HOME"
                     link = ""
                 />
-                <NavElement 
+                {/*<NavElement 
                     name= "CULTURE"
                     link = "culture"
-                />
+    />*/}
                 
                 <NavElement 
                     name= "PROJECTS"
