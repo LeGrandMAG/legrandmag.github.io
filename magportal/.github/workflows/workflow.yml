@@ -1,4 +1,4 @@
-name : GIthub Pages Deploy
+name : Git git papa deploy
 
 on:  [push]
     
@@ -10,8 +10,8 @@ jobs:
       node-version: [15.x]
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
+      - name: Check out repositories code
+        uses: actions/checkout@v3
       
       - name: Install and build
         run: npm install && npm run build
