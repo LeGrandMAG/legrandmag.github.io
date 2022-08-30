@@ -1,12 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700&display=swap');
 
+:root{
+  --dark: #051A36;
+  --primary: #07305E;
+  --secondary: #0F3866;
+  --white: #FFF; 
+}
+#root{
+  width: 100%;
+}
+body{
+  transition: 01s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
 /* BODY */
 .App {
   text-align: center;
   font-family:"Montserrat", sans-serif;
-  color: black;
+  transition: 01s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
 
+}
+
+.light{
+  color: var(--dark);
+  background:white;
+}
+.dark{
+  color: white;
+  background:var(--dark);
 }
 
 .main{
@@ -17,14 +51,53 @@
 /*NAV BAR=============================================*/
 
 nav{
+  position: absolute;
+  background-color: white;
   width:100%;
   height: fit-content;
   padding:0.5rem 0rem;
-  top:0px;
-  background-color: white;
+  top:0%;
   z-index: 1;
   margin-bottom:10px;
+}
+
+.switch-cont{
+  border: 0.01rem solid var(--dark);
   position:fixed;
+  left:20%;
+  top: 2px;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transform: scale(0.8);
+  background: white;
+}
+.switch-cont p{
+  margin:0px;
+}
+.switch-container{
+  border:1px solid #051A36;
+  border-radius: 30px;
+  height: 20px;
+  width: 45px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.switch-container:hover{
+cursor: pointer;
+}
+.switch{
+  height: 24px;
+  width:24px;
+  background: white;
+  border-radius: 30px;
+  background: var(--secondary);
+
 }
 nav ul{
   margin: auto;
@@ -39,7 +112,7 @@ nav ul{
 
 .navElement .anchor{
   text-decoration: none;
-  color: black;
+  color: var(--dark);
   padding: 5px;
   font-size: 0.8rem;
   transition: 0.25s;
@@ -49,7 +122,7 @@ nav ul{
 .navElement .anchor:hover{
   opacity: 1;
   color: white;
-  background-color: black;
+  background-color: var(--dark);
   transition: 0.2s;
 
 }
@@ -59,9 +132,7 @@ nav ul{
   font-family: "lato";
 }
 
-.content{
-  margin-top:1.5rem;
-}
+
 /* HERO ==================================*/
 .hero{
   font-family: "lato";
@@ -107,7 +178,7 @@ nav ul{
   font-size: 0.65rem;
   cursor: pointer;
   margin: 1rem 0rem 1rem 0rem;
-  background-color: black;
+  background-color: var(--dark);
   padding: 10px;
   color: white;
   font-weight: bold;
@@ -148,17 +219,36 @@ nav ul{
   width: 100%;
   margin: auto;
 }
+.notice{
+  margin-top: 120px;
+  animation: float 2.5s ease-in-out infinite;
+}
 
-
+@keyframes float{
+  0%{   
+    transform: translate(0%,10%);
+    font-weight: 400;
+  }
+  50%{
+    transform: translate(0%,0%);
+    opacity: 0;
+    font-weight: 300;
+  }
+  
+  100%{
+    transform: translate(0%,10%);
+    font-weight: 400;
+  }
+}
 
 /*Footer ========*/
 
 .footer{
-  position: absolute;
-  bottom: -50;
+  position: relative;
+  bottom: 60%;
   width:100vw;
   padding: 2rem 0rem 2rem 0rem;
-
+  transition: 01s ease-in-out;
 }
 
 .footer hr, nav hr{
@@ -166,11 +256,13 @@ nav ul{
   margin:auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background: var(--dark);
 }
 .footer span{
   font-size: 14px;
-  color: black;
   padding: 10px;
+  transition: 01s ease-in-out;
+
 }
 
 .footer span:hover{
@@ -180,30 +272,47 @@ nav ul{
 .footer p{
   margin: 1rem 0rem 0.5rem 0rem;
   font-size: 8px;
+  transition: 01s ease-in-out;
+
 }
 
 
 /*Project */
 .project-container, .home-container{
   width: 80%;
-  margin:auto;
-  margin-top: 3rem;
   padding: 3rem 0rem 3rem 0rem;
-  border: 1px solid gray;
+  /*border: 1px solid var(--dark);*/
+  transition: 01s ease-in-out;
   ;
 }
 .project-container{
+  transition: 01s ease-in-out;
   display: flex;
   flex-direction: column;
+  transition: 01s ease-in-out;
 }
 .lili{
-  color:black; 
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 10px;
+  transition: 01s ease-in-out;
+}
+.project-container .light{
+  color:var(--dark);
+  transition: 01s ease-in-out;
+  background-color: transparent;
+  transition: 01s ease-in-out;
+}
+
+.project-container .dark{
+  color: white;
+  transition: 01s ease-in-out;
+  background-color: transparent;
+  transition: 01s ease-in-out;
 }
 .lili:hover{
   color:#1781C2;
+  transition: 01s ease-in-out;
 }
 /*===========================PAGE NOT FOUND */ 
 
@@ -217,7 +326,15 @@ p{
 
   
 }
+.content{
+  width:100%;
+  transition: 01s ease-in-out;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -241,5 +358,12 @@ p{
 @media (max-width: 450px){
   .studio243{
     max-width: 100%;
+  }
+  .switch-cont{
+  left:0%;
+  left:30%;
+  top:unset;
+  bottom: 30%;
+
   }
 }
