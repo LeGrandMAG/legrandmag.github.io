@@ -246,7 +246,7 @@ nav ul{
 .footer{
   position: relative;
   bottom: 60%;
-  width:100vw;
+  width:100%;
   padding: 2rem 0rem 2rem 0rem;
   transition: 01s ease-in-out;
 }
@@ -328,6 +328,7 @@ p{
 }
 .content{
   width:100%;
+  margin-top: 40px;
   transition: 01s ease-in-out;
   height: auto;
   display: flex;
@@ -338,7 +339,7 @@ p{
 .back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 50px;
   font-size: 20px;
   background: rgb(40,40,40);
   color: white;
@@ -347,6 +348,7 @@ p{
   border: none;
   height: 40px;
   width: 40px;
+  z-index: 10;
   /*box-shadow: 0 5px 10px #ccc;*/
 }
 
@@ -367,3 +369,117 @@ p{
 
   }
 }
+
+
+
+/*=============*/
+.resume_container{
+  color: black;
+  position:relative;
+  margin-top: 40px;
+  border: 2px solid rgb(240,240,240);
+  width:840px;
+  display:flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-info p{
+  padding: 0;
+  margin: 0;
+}
+
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.link-status{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.link-status a{
+  font-size: 12px;
+  color:#0F3866;
+  text-decoration: none;
+}
+
+.link-status a:hover{
+  font-weight: 800;
+}
+.link-status p {
+  margin:0px
+}
+
+
+.section-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.section1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.section1 span{
+  font-size: 10px;
+  font-weight: 400;
+}
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.cert p{
+  margin:3.5px;
+}
+.cert strong{
+  font-weight: 600;
+}
+.section2 p{
+  font-size: 10px;
+}
+.section p{
+  padding:0;
+  margin: 0;
+}
+.section{
+  margin-top: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+
+.section-bullet{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align:justify;
+}
+.section-bullet p{
+  margin:2px;
+}
+.section-title{
+  font-size: 15px;
+  padding:5px 10px;
+  width: 100%;
+  background-color: rgb(240,240,240);
+  text-align: left;
+}
+

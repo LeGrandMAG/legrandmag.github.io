@@ -71,7 +71,12 @@ function Navbar(){
                 <NavElement 
                     name= "PROJECTS"
                     link = "projects"
-                />*/}
+                />
+                */}
+                <NavElement 
+                    name= "RESUME"
+                    link = "resume"
+                />
                 
             </ul>
            { /*<p id="myname">magloire mukendi</p> */}
