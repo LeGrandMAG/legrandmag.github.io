@@ -28,7 +28,7 @@ function Projects() {
         <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator">Wepo Price Calculator</a>
         <a className = "lili  light" href=" http://magmukendi.me/Tweets-Count/">Tweets Word Counter</a>
         <a className = "lili  light" href="https://magmukendi.me/memory-game">Memory Game</a>
-        <a className = "lili  light" href="https://magmukendi.me/pianonotes">Piano Notes Player</a>
+        <a className = "lili  light" href="https://magmukendi.me/pianonotes">Piano Notes Player 1.0</a>
 
     </div>
   )
