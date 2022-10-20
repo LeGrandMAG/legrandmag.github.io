@@ -322,8 +322,7 @@ nav ul{
 }
 .lili:hover{
   color:#1781C2;
-  transition: 01s ease-in-out;
-  background: red;
+  transition: 0.25s ease-in-out;
 }
 /*===========================PAGE NOT FOUND */ 
 
