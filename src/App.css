@@ -290,29 +290,40 @@ nav ul{
   display: flex;
   flex-direction: column;
   transition: 01s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .lili{
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 10px;
   transition: 01s ease-in-out;
+  width:fit-content;
 }
 .project-container .light{
   color:var(--dark);
   transition: 01s ease-in-out;
   background-color: transparent;
   transition: 01s ease-in-out;
+;
 }
 
 .project-container .dark{
+  align-self: center;
   color: white;
   transition: 01s ease-in-out;
   background-color: transparent;
   transition: 01s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .lili:hover{
   color:#1781C2;
   transition: 01s ease-in-out;
+  background: red;
 }
 /*===========================PAGE NOT FOUND */ 
 
