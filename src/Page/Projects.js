@@ -23,12 +23,12 @@ function Projects() {
     <div className="project-container">
                
         <Link className="lili  light" to="/studio">Portfolio 243 Studio</Link>
-        <a className = "lili  light" href="https://magmukendi.me/quickymeme">Meme Generator</a>
-        <a className = "lili  light" href="https://magmukendi.me/Tenzi-Game">Tenzi Game</a>
-        <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator">Wepo Price Calculator</a>
-        <a className = "lili  light" href=" http://magmukendi.me/Tweets-Count/">Tweets Word Counter</a>
-        <a className = "lili  light" href="https://magmukendi.me/memory-game">Memory Game</a>
-        <a className = "lili  light" href="https://magmukendi.me/pianonotes">Piano Notes Player 1.0</a>
+        <a className = "lili  light" href="https://magmukendi.me/quickymeme" target="_blank">Meme Generator</a>
+        <a className = "lili  light" href="https://magmukendi.me/Tenzi-Game" target="_blank">Tenzi Game</a>
+        <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator" target="_blank">Wepo Price Calculator</a>
+        <a className = "lili  light" href=" http://magmukendi.me/Tweets-Count/" target="_blank">Tweets Word Counter</a>
+        <a className = "lili  light" href="https://magmukendi.me/memory-game" target="_blank">Memory Game</a>
+        <a className = "lili  light" href="https://magmukendi.me/pianonotes" target="_blank">Piano Notes Player 1.0</a>
 
     </div>
   )
