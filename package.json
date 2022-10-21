@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "homepage": "https://LeGrandMAG.github.io",
   "private": true,
+  "license": "MIT",
+  "author": "Mag Mukendi <magmukendi0@gmail.com> (https://magmukendi.me/)",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -20,10 +22,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build && cp CNAME build/CNAME",
+
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }, 
@@ -48,4 +51,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
+
 }
