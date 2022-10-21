@@ -22,7 +22,7 @@ function Projects() {
   return (
     <div className="project-container">
                
-        <Link className="lili  light" to="/studio">Portfolio 243 Studio</Link>
+        <a className = "lili  light" href="https://astonishing-piroshki-1236ad.netlify.app/" target="_blank">243 Studio Portfolio</a>
         <a className = "lili  light" href="https://magmukendi.me/quickymeme" target="_blank">Meme Generator</a>
         <a className = "lili  light" href="https://magmukendi.me/Tenzi-Game" target="_blank">Tenzi Game</a>
         <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator" target="_blank">Wepo Price Calculator</a>
