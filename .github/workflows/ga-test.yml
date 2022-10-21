@@ -1,5 +1,5 @@
 name: MasterDeployCI
-run-name: ${{github.actor}} is testing out Github Actions 🚀🚀
+run-name: ${{github.actor}} just push the ${{github.repository}}
 on: [fork]
 jobs:
   Explore-github-actions:
