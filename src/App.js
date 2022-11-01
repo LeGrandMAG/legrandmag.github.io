@@ -1,7 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
-import { Navbar, Footer} from './components/Content';
+import { Navbar, Footer, AddForm} from './components/Content';
 import {useState, useEffect} from "react"
-
 //import logo from './logo.svg';
 import './App.css';
 import Publication from './Page/Publication';
@@ -25,15 +24,18 @@ function App() {
   const [showButton, setShowButton] = useState(false);
   const [fixNav, setFixNav] = useState('fixed')
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-
-      if (window.pageYOffset > 300) {
+  function checkScroll(){
+       if (window.pageYOffset > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);
       }
-    });
+    
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", checkScroll )
+    
+    return () => window.removeEventListener("scroll", checkScroll )
   }, []);
 
 

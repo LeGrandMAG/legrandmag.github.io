@@ -1,6 +1,9 @@
 import {Link} from 'react-router-dom'
-
+import { initializeApp } from "firebase/app";
+import { getFirestore,addDoc, collection } from "firebase/firestore";
 import {useState} from 'react'
+import {firebaseConfig} from '../assets/Credentials'
+import { Label } from '@mui/icons-material';
 /*This is the nav element of the app*/
 
 function NavElement(props){
@@ -88,10 +91,35 @@ function Navbar(){
     )
 }
 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 
 
 
+function  AddForm(){
+
+    async function addData(){
+        try {
+            const docRef = await addDoc(collection(db, "users"), {
+              first: "Ada",
+              last: "Lovelace",
+              born: 1815
+            });
+            console.log("Document written with ID: ", docRef.id);
+          } catch (e) {
+            console.error("Error adding document: ", e);
+          }
+    }
+    return(
+        <div>
+            <input/>
+            <button onClick ={addData}>
+                Add Data
+            </button>
+        </div>
+    )
+}
 
 
 function Footer(){
@@ -132,4 +160,4 @@ function Footer(){
 }
 
 
-export  {Navbar, Footer}
+export  {Navbar, Footer, AddForm}

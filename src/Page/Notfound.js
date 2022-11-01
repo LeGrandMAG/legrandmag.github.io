@@ -5,7 +5,7 @@ function Notfound() {
     <div class="cont">
   <div class="copy-container center-xy">
     <p>
-      404, page not found.
+      NO pages to show :).
     </p>
 
   </div>
