@@ -65,8 +65,6 @@ function App() {
         <Route path="culture" element={<Culture/>}/>
         <Route path="resume" element={<Resume/>}/>
         <Route path="studio" element={<Studio243/>}/>
-
-
         <Route path="/*" element={<NotFound/>}/>
 
       </Routes>
