@@ -1,4 +1,4 @@
-name: MasterDeployCI
+name: Fork Test
 run-name: ${{github.actor}} just push the ${{github.repository}}
 on: [fork]
 jobs:
