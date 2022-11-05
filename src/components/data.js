@@ -78,40 +78,81 @@ export const work = [
 
 export const cert = [
     {
-        name:"CS50’s Web Programming with Python and JavaScript",
-        inst:'Harvard University',
-        date:'In progress'
-    },
-    {
-        name:"Front End Development Libraries Certification",
-        inst:'Free Code Camp',
-        date:'October 2022'
-    },
-    {
-        name:"JavaScript Algorithms and Data Structures Certification",
-        inst:'Free Code Camp',
-        date:'2022'
-    },
-    {
-        name:"Responsive Web Design Certification",
-        inst:'Free Code Camp',
-        date:'In progress'
-    },
-    
-    {
-        name:"Test of Proficiency in Korean (Level IV)",
-        inst:'National Institute for International Education (NIIED)',
-        date:'October 2021'
-    },
-    {
-        name:"Foreign Startup School 2021",
-        inst:'InvestSeoul',
-        date:'April 2021'
-    }
+        type: "language",
+        data: [
 
+            {
+                name:"Test of Proficiency in Korean (TOPIK)",
+                inst:'National Institute for International Education (NIIED)',
+                date:'October 2021',
+                level: "Level 4",
+                link:"https://"
+            },
+            {
+                name:"Test of English for International Communication (TOEIC)",
+                inst:'Educational Testing Service (ETS)',
+                date:'October 2021',
+                score: 915,
+                link: "https://"
+            },
+        ] 
+    },
+    {
+        type: "programming",
+        data: [
+            {
+                name:"CS50’s Web Programming with Python and JavaScript",
+                inst:'Harvard University',
+                date:'In progress',
+                link: "https://"
+            },
+            {
+                name:"Front End Development Libraries Certification",
+                inst:'Free Code Camp',
+                date:'October 2022',
+                link: "https://"
+
+            },
+            {
+                name:"JavaScript Algorithms and Data Structures Certification",
+                inst:'Free Code Camp',
+                date:'2022',
+                link: "https://"
+            },
+            {
+                name:"Responsive Web Design Certification",
+                inst:'Free Code Camp',
+                date:'In progress',
+                link: "https://"
+            },
+        ]
+    },
+    {
+        type: "Marketing",
+        data:[
+            {
+                name:'',
+                inst: '',
+                date:'',
+                link:"",
+            },
+        ]
+    },
+    {
+        type: "Marketing",
+        data:[
+            {
+                name:"Foreign Startup School 2021",
+                inst:'InvestSeoul',
+                date:'April 2021',
+                link:''
+            }
+        ]
+    }
+    
 ]
 
-export const OpenSource = [
+export const OpenSourceContribution = [
     {
         name: "Developer Quiz Site",
         description: "A companion to Learn to Code RPG Game, a visual nove game developed by freeCodeCamp to help people learn how to code.",
