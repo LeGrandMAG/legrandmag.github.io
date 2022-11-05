@@ -110,3 +110,39 @@ export const cert = [
     }
 
 ]
+
+export const OpenSource = [
+    {
+        name: "Developer Quiz Site",
+        description: "A companion to Learn to Code RPG Game, a visual nove game developed by freeCodeCamp to help people learn how to code.",
+        link:"https://developerquiz.org/",
+        repo: "https://github.com/freeCodeCamp/Developer_Quiz_Site",
+        commit: "https://github.com/freeCodeCamp/Developer_Quiz_Site/commits?author=LeGrandMAG",
+        work:["Refactored the code of the Hero section component.", "fixed a typo in the javascript questions"]
+    },
+    {
+        name: "CyBear Jinni App",
+        description: "A mobile application that let the user control the CyBear Jinni Hub a software to control smart devices while keeping user privacy.",
+        link: "https://cybearjinni.com/",
+        repo: "https://github.com/CyBear-Jinni/cbj_app",
+        commit: "https://github.com/CyBear-Jinni/cbj_app/commits/dev?author=LeGrandMAG",
+        work:["Provided translation in French from DRCongo"]
+    },
+    {
+        name: "Clipboard",
+        description: "A Web based clipboard. the simplest method for transmitting text data across internet-connected devices.",
+        link: "",
+        repo: "https://github.com/fadkeabhi/CLIPBOARD",
+        commit: "https://github.com/fadkeabhi/CLIPBOARD/pull/68/commits",
+        work:["Updated the style of UI component"]
+    },
+    {
+        name: "Clipboard",
+        description: "A Web based clipboard. the simplest method for transmitting text data across internet-connected devices.",
+        link: "",
+        repo: "https://github.com/fadkeabhi/CLIPBOARD",
+        commit: "https://github.com/fadkeabhi/CLIPBOARD/pull/68/commits",
+        work:["Updated the style of UI component"]
+    },
+    
+]
