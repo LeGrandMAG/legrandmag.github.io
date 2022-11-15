@@ -9,7 +9,9 @@ import Home from './Page/Home'
 import Projects from './Page/Projects'
 import Culture from './Page/Culture'
 import NotFound from './Page/Notfound'
-import Resume from './Page/Resume'
+import FrontEndResume from './Page/Resume/FrontEndResume'
+import MarketingResume from './Page/Resume/MarketingResume'
+
 import Studio243 from './Page/Studio243'
 
 
@@ -63,7 +65,8 @@ function App() {
         <Route path="projects" element={<Projects/>}/>
         <Route path="publication" element={<Publication/>}/>
         <Route path="culture" element={<Culture/>}/>
-        <Route path="resume" element={<Resume/>}/>
+        <Route path="resume/1" element={<FrontEndResume/>}/>
+        <Route path="resume/2" element={<MarketingResume/>}/>
         <Route path="studio" element={<Studio243/>}/>
         <Route path="/*" element={<NotFound/>}/>
 

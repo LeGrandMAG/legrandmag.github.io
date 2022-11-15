@@ -1,7 +1,8 @@
 import React from 'react'
-import photo from '../assets/img/ps.jpg'
-import {work, cert} from '../components/data'
-
+import photo from '../../assets/img/ps.jpg'
+import {frontEndWork, LeaderExp, OpenSourceContribution, cert, Awards} from '../../components/data'
+import nanoid from 'nano-id'
+import { Link } from 'react-router-dom'
 
 function Role(props){
   return(
@@ -36,29 +37,89 @@ function WorkExperience(props){
 
   )
 }
-function Resume() {
+function FrontEndResume() {
 
-  const workElements = work.map((item)=> <>
+  const frontEndWorkElements = frontEndWork.map((item)=> <>
   <WorkExperience
   compLocation = {item.companyLocation}
   company = {item.company}
   location = {item.location}
   position = {item.position}
-  date = {item.date}
   />
-  <div className='section1'>
+  <div   
+  key = {frontEndWork.indexOf(item)}
+  className='section1'>
     <ul className='section-bullet'>
       {item.responsibilities.map(role => <li>
-        <Role task={role}/>
+        <Role key = {nanoid()} task={role}/>
         </li>
         )}
     </ul>
   </div>
   </>)
 
+const LeaderExpElements = LeaderExp.map((item)=> <>
+<WorkExperience
+compLocation = {item.companyLocation}
+company = {item.company}
+location = {item.location}
+position = {item.position}
+date = {item.date}
+/>
+<div   
+key = {LeaderExp.indexOf(item)}
+className='section1'>
+  <ul className='section-bullet'>
+    {item.responsibilities.map(role => <li>
+      <Role key = {nanoid()} task={role}/>
+      </li>
+      )}
+  </ul>
+</div>
+</>)
 
-const certElements = cert.map((item)=>
-<div className='section'>
+const OpenSourceElements = OpenSourceContribution.map((item)=> <>
+<WorkExperience
+compLocation = {item.description}
+company = {item.name}
+location = {item.location}
+position = {item.position}
+/>
+
+<div   
+key = {OpenSourceContribution.indexOf(item)}
+className='section1'>
+  <ul className='section-bullet'>
+    {item.work.map(role => <li>
+      <Role key = {nanoid()} task={role}/>
+      </li>
+      )}
+  <p class="url-repo"><strong>Project Link: </strong><a href={item.repo}>{item.repo}</a></p>
+  </ul>
+</div>
+</>)
+const AwardElements = Awards.map((item)=>
+<div key = { nanoid()} 
+className='section'>
+<div className ='section1 cert'>
+  <p><strong>{item.name}<span>, {item.prize}</span></strong></p>
+  
+  {item.description && <ul className='section-bullet'>
+    <li className='gauche'>
+        <Role task={item.description}/>
+      </li>
+
+  </ul>}
+</div>
+<div className='section2'>
+  <p>{item.date}</p>
+</div>
+</div>)
+
+
+const certElements = cert[1].data.map((item)=>
+<div key = { nanoid()} 
+className='section'>
 <div className ='section1 cert'>
   <p><strong>{item.name}<span>, {item.inst}</span></strong></p>
 </div>
@@ -67,12 +128,15 @@ const certElements = cert.map((item)=>
 </div>
 </div>)
 
-
   return (
     <div className = "resume_container">
+        <p class="okay">
+        This is my Software Engineering Resume. You can check out my   <Link className ="okay" to={"/resume/2"}>Marketing
+            </Link> Resume 
+        </p>
       <header style={{width:'100%'}}>
         <div style={{width:'100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start'}}>
-          <p>Magloire Mukendi</p>
+          <h3>Magloire Mukendi</h3>
           <img src={photo} style={{width:120, height:'auto', borderRadius:5}}>
           </img>
           </div>
@@ -83,7 +147,8 @@ const certElements = cert.map((item)=>
             <p>Dongdaemun-gu, Seoul, South Korea</p>
           </div>
           <div className='link-status'>
-            <a href="https://linkedin.com/in/magmukendi" target='_blank'>linkedin.com/in/magmukendi</a>
+            <a href="https://github.com/LeGrandMAG" target='_blank'>github.com/LeGrandMAG</a>
+
             <p>Current visa status: <strong>D-10</strong></p>
             <p>Korean Level: <strong>
               TOPIK 4
@@ -114,7 +179,19 @@ const certElements = cert.map((item)=>
 
       <div className='section-container'>
         <h4 className='section-title'>EXPERIENCE</h4>
-       {workElements}
+       {frontEndWorkElements}
+      </div>
+      <div className='section-container'>
+        <h4 className='section-title'> LEADERSHIP EXPERIENCE</h4>
+       {LeaderExpElements}
+      </div>
+      <div className='section-container'>
+        <h4 className='section-title'> OPEN SOURCE COUNTRIBUTION</h4>
+       {OpenSourceElements}
+      </div>
+      <div className='section-container'>
+        <h4 className='section-title'>AWARDS</h4>
+        {AwardElements}
       </div>
       <div className='section-container'>
         <h4 className='section-title'>CERTIFICATION & ADDITIONAL TRAINING</h4>
@@ -124,4 +201,4 @@ const certElements = cert.map((item)=>
   )
 }
 
-export default Resume
+export default FrontEndResume
