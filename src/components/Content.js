@@ -78,7 +78,7 @@ function Navbar(){
                 */}
                 <NavElement 
                     name= "RESUME"
-                    link = "resume"
+                    link = "resume/1"
                 />
                 <NavElement
                 name="PROJECTS"

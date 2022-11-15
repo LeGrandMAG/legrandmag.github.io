@@ -23,6 +23,7 @@ function Projects() {
     <div className="project-container">
                
         <a className = "lili  light" href="https://astonishing-piroshki-1236ad.netlify.app/" target="_blank">243 Studio Portfolio</a>
+        <a className = "lili  light" href="https://magmukendi.me/random-activities/" target="_blank">Random Activities</a>
         <a className = "lili  light" href="https://magmukendi.me/quickymeme" target="_blank">Meme Generator</a>
         <a className = "lili  light" href="https://magmukendi.me/Tenzi-Game" target="_blank">Tenzi Game</a>
         <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator" target="_blank">Wepo Price Calculator</a>
