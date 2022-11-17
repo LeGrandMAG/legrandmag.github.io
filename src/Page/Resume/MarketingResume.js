@@ -1,6 +1,6 @@
 import React from 'react'
-import photo from '../../assets/img/ps.jpg'
-import {marketingWork, cert, OpenSourceContribution, Awards} from '../../components/data'
+//import photo from '../../assets/img/ps.jpg'
+import {marketingWork, cert,  Awards} from '../../components/data'
 import nanoid from 'nano-id'
 import { Link } from 'react-router-dom'
 
