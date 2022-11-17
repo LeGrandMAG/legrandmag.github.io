@@ -89,23 +89,6 @@ className='section'>
 </div>
 </div>)
 
-const OpenSourceElements = OpenSourceContribution.map((item)=>
-<div key = { nanoid()} 
-className='section'>
-<div className ='section1 cert'>
-  <p><strong>{item.name}<span>, {item.prize}</span></strong></p>
-  
-  <ul className='section-bullet gauche'>
-  <li >
-        <Role task={item.description}/>
-      </li>
-
-  </ul>
-</div>
-<div className='section2'>
-  <p>{item.date}</p>
-</div>
-</div>)
 
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../assets/img/ps.jpg'
+//import photo from '../../assets/img/ps.jpg'
 import {frontEndWork, LeaderExp, OpenSourceContribution, cert, Awards, Projects} from '../../components/data'
 import nanoid from 'nano-id'
 import { Link } from 'react-router-dom'
@@ -39,7 +39,7 @@ function WorkExperience(props){
 }
 function FrontEndResume() {
 
-  const frontEndWorkElements = frontEndWork.map((item)=> <>
+  const frontEndWorkElements = frontEndWork.map((item)=> <div key = {nanoid()}>
   <WorkExperience
   compLocation = {item.companyLocation}
   company = {item.company}
@@ -58,11 +58,11 @@ function FrontEndResume() {
         )}
     </ul>
   </div>
-  </>)
+  </div>)
 
 
 
-const LeaderExpElements = LeaderExp.map((item)=> <>
+const LeaderExpElements = LeaderExp.map((item)=> <div key={nanoid()}>
 <WorkExperience
 compLocation = {item.companyLocation}
 company = {item.company}
@@ -81,10 +81,10 @@ className='section1'>
       )}
   </ul>
 </div>
-</>)
+</div>)
 
 const ProjectsElements = Projects.map((item) =>{
-  return(<>
+  return(<div key = {nanoid()}>
   <WorkExperience
   compLocation = {item.technology}
 
@@ -99,9 +99,9 @@ className='section1'>
         {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a href={item.link}>LIVE VERSION</a></p>}
 
 </div>
-  </>  
+  </div>  
 )})
-const OpenSourceElements = OpenSourceContribution.map((item)=> <>
+const OpenSourceElements = OpenSourceContribution.map((item)=> <div key = {nanoid()}>
 <WorkExperience
 compLocation = {item.description}
 company = {item.name}
@@ -121,7 +121,7 @@ className='section1'>
   <p className="url-repo"><strong>Project Link: </strong><a href={item.repo}>{item.repo}</a></p>
   </ul>
 </div>
-</>)
+</div>)
 const AwardElements = Awards.map((item)=>
 <div key = { nanoid()} 
 className='section'>
