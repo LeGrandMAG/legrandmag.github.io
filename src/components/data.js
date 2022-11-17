@@ -21,7 +21,7 @@ export const frontEndWork = [
             "Wrote functionalities requirement documents and guides to help smooth the development process.",
             "Illustrated design ideas using storyboards, process flows and wireframing for the multiple version of the application prototype.",
             "Conducted user research interview with up to 30 different users.",
-            "implemented, iterated and maintained the web application and the mobile application components.",
+            "Implemented, iterated and maintained the web application and the mobile application components.",
             "Collaborated with the team developers by conducting code reviews and sprints."
         ]
     },
@@ -51,7 +51,7 @@ export const LeaderExp = [
         responsibilities: [
             "Spearheaded the campaign to raise awareness about the 12 main challenges and needs of the 1500+ regular international students at HUFS.",
             "Consolidated the partnership with the HUFS General Student Council, the Dean of International Affairs, the Campus English newspaper, and International Students Organization from other Universities.",
-            "Led the process of solving international students’ challenges such as the availability of classes conducted in English, the access to accurate information about University life, and the participation to extracurricular activities on Campus",
+            "Led the process of solving international students’ challenges such as the availability of classes conducted in English, the access to accurate information about University life, and the participation to extracurricular activities on Campus.",
         ]
     },
 ]
@@ -134,7 +134,7 @@ export const marketingWork = [
         responsibilities: [
             "Spearheaded the campaign to raise awareness about the 12 main challenges and needs of the 1500+ regular international students at HUFS.",
             "Consolidated the partnership with the HUFS General Student Council, the Dean of International Affairs, the Campus English newspaper, and International Students Organization from other Universities.",
-            "Led the process of solving international students’ challenges such as the availability of classes conducted in English, the access to accurate information about University life, and the participation to extracurricular activities on Campus",
+            "Led the process of solving international students’ challenges such as the availability of classes conducted in English, the access to accurate information about University life, and the participation to extracurricular activities on Campus.",
         ]
     },
 
@@ -224,7 +224,7 @@ export const OpenSourceContribution = [
         link:"https://developerquiz.org/",
         repo: "https://github.com/freeCodeCamp/Developer_Quiz_Site",
         commit: "https://github.com/freeCodeCamp/Developer_Quiz_Site/commits?author=LeGrandMAG",
-        work:["Refactored the code of the Hero section component.", "Fixed a typo in the javascript questions"]
+        work:["Refactored the code of the Hero section component.", "Fixed a typo in the javascript questions."]
     },
     {
         name: "CyBear Jinni App",
@@ -240,7 +240,7 @@ export const OpenSourceContribution = [
         link: "",
         repo: "https://github.com/fadkeabhi/CLIPBOARD",
         commit: "https://github.com/fadkeabhi/CLIPBOARD/pull/68/commits",
-        work:["Updated the style of UI component"]
+        work:["Updated the style of UI components."]
     },
     {
         name: "React-drag-drop",
@@ -253,6 +253,57 @@ export const OpenSourceContribution = [
     
 ]
 
+
+export const Projects = [
+    {
+        name: "Wepo’s Mobile App",
+        description: "A C2C mobile platform for transaction of seconhand products in DR Congo.",
+        technology: "Figma, Javascript and React-Native",
+        link:""
+    },
+    {
+        name: "243 Studio Portfolio",
+        description: " A web app displaying all the works done by 243 Studio.",
+        technology: "HTML, CSS & Vanilla Javascript",
+        link:"https://astonishing-piroshki-1236ad.netlify.app/"
+    }, 
+    {
+        name: "Random Activities",
+        description: "A web app that suggests the user what to do as activity for that day.",
+        technology: "HTML, CSS, React & Javascript",
+        link:"https://magmukendi.me/random-activities/"
+    },
+    {
+        name: "Second-hand products Price Calculator",
+        description:"A tool that helps the user estimates the value of a  second-products bought in Korean market and to be sold in the Congolese market.",
+        technology:"Javascript & React",
+        link:"http://magmukendi.me/wepoPriceCalculator"
+    },
+    {
+        name: "Tweet Readability",
+        description: " A web app that counts the number of characters and words typed by the user in realtime and notifies him before he reaches the limit set by twitter. This web app also assess the readability level of the text.",
+        technology:" HTML, CSS, Vanilla Javascript",
+        link:"http://magmukendi.me/Tweets-Count/"
+    },
+    {
+        name: "Meme Generator",
+        description: "A Simple meme generator that helps the user generate meme and save in their computers in a matter of seconds.",
+        technology:" HTML, CSS, Vanilla Javascript",
+        link:"https://magmukendi.me/quickymeme/"
+    },
+    {
+        name: "Tenzi Game",
+        description: " A single player Tenzi game.",
+        technology:"HTML, CSS, Javascript & React",
+        link:"https://magmukendi.me/Tenzi-Game/"
+    },
+    {
+        name:"Piano Notes Player",
+        description: "A Single Page Application that allows the user to play piano notes between C3 to C4.",
+        technology:"HTML, Javascript & React",
+        link:"http://magmukendi.me/pianonotes"
+    }
+]
 
 export const Awards =
 [

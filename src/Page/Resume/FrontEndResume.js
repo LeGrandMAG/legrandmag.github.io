@@ -1,6 +1,6 @@
 import React from 'react'
 import photo from '../../assets/img/ps.jpg'
-import {frontEndWork, LeaderExp, OpenSourceContribution, cert, Awards} from '../../components/data'
+import {frontEndWork, LeaderExp, OpenSourceContribution, cert, Awards, Projects} from '../../components/data'
 import nanoid from 'nano-id'
 import { Link } from 'react-router-dom'
 
@@ -45,18 +45,22 @@ function FrontEndResume() {
   company = {item.company}
   location = {item.location}
   position = {item.position}
+  date = {item.date}
+  key = {item.company}
   />
   <div   
   key = {frontEndWork.indexOf(item)}
   className='section1'>
     <ul className='section-bullet'>
-      {item.responsibilities.map(role => <li>
+      {item.responsibilities.map(role => <li key = {nanoid()}>
         <Role key = {nanoid()} task={role}/>
         </li>
         )}
     </ul>
   </div>
   </>)
+
+
 
 const LeaderExpElements = LeaderExp.map((item)=> <>
 <WorkExperience
@@ -65,12 +69,13 @@ company = {item.company}
 location = {item.location}
 position = {item.position}
 date = {item.date}
+key = {nanoid()}
 />
 <div   
 key = {LeaderExp.indexOf(item)}
 className='section1'>
   <ul className='section-bullet'>
-    {item.responsibilities.map(role => <li>
+    {item.responsibilities.map(role => <li key = {nanoid()}>
       <Role key = {nanoid()} task={role}/>
       </li>
       )}
@@ -78,23 +83,42 @@ className='section1'>
 </div>
 </>)
 
+const ProjectsElements = Projects.map((item) =>{
+  return(<>
+  <WorkExperience
+  compLocation = {item.technology}
+
+      company = {item.name}
+      key = {nanoid()}
+      />
+
+<div   
+key = {nanoid()}
+className='section1'>
+        <p style={{textAlign:"left", marginBottom:"5px"}} key = {nanoid()}>{item.description}</p>
+        {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a href={item.link}>LIVE VERSION</a></p>}
+
+</div>
+  </>  
+)})
 const OpenSourceElements = OpenSourceContribution.map((item)=> <>
 <WorkExperience
 compLocation = {item.description}
 company = {item.name}
 location = {item.location}
 position = {item.position}
+key = {nanoid()}
 />
 
 <div   
-key = {OpenSourceContribution.indexOf(item)}
+key  = {nanoid()}
 className='section1'>
-  <ul className='section-bullet'>
-    {item.work.map(role => <li>
+  <ul className='section-bullet' key = {nanoid()}>
+    {item.work.map(role => <li >
       <Role key = {nanoid()} task={role}/>
       </li>
       )}
-  <p class="url-repo"><strong>Project Link: </strong><a href={item.repo}>{item.repo}</a></p>
+  <p className="url-repo"><strong>Project Link: </strong><a href={item.repo}>{item.repo}</a></p>
   </ul>
 </div>
 </>)
@@ -105,8 +129,9 @@ className='section'>
   <p><strong>{item.name}<span>, {item.prize}</span></strong></p>
   
   {item.description && <ul className='section-bullet'>
-    <li className='gauche'>
-        <Role task={item.description}/>
+    <li className='gauche'
+    key = { nanoid()} >
+        <Role task={item.description} key = { nanoid()} />
       </li>
 
   </ul>}
@@ -130,19 +155,17 @@ className='section'>
 
   return (
     <div className = "resume_container">
-        <p class="okay">
+        <p className="okay">
         This is my Software Engineering Resume. You can check out my   <Link className ="okay" to={"/resume/2"}>Marketing
             </Link> Resume 
         </p>
       <header style={{width:'100%'}}>
         <div style={{width:'100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start'}}>
-          <h3>Magloire Mukendi</h3>
-          <img src={photo} style={{width:120, height:'auto', borderRadius:5}}>
-          </img>
+        <h3 style={{marginBottom:'30px'}}>Magloire Mukendi</h3>
+          {/*<img src={photo} style={{width:120, height:'auto', borderRadius:'100%'}}>*/}
           </div>
         <div className='contact-container'>
           <div className="contact-info">
-            <p>+821090261605</p>
             <p>magmukendi0@gmail.com</p>
             <p>Dongdaemun-gu, Seoul, South Korea</p>
           </div>
@@ -150,9 +173,8 @@ className='section'>
             <a href="https://github.com/LeGrandMAG" target='_blank'>github.com/LeGrandMAG</a>
 
             <p>Current visa status: <strong>D-10</strong></p>
-            <p>Korean Level: <strong>
-              TOPIK 4
-              </strong>
+            <p>
+              TOPIK 4 | TOEIC 945
               </p>
           </div>
         </div>
@@ -184,6 +206,10 @@ className='section'>
       <div className='section-container'>
         <h4 className='section-title'> LEADERSHIP EXPERIENCE</h4>
        {LeaderExpElements}
+      </div>
+      <div className='section-container'>
+        <h4 className='section-title'> PROJECTS </h4>
+       {ProjectsElements}
       </div>
       <div className='section-container'>
         <h4 className='section-title'> OPEN SOURCE COUNTRIBUTION</h4>

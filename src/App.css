@@ -509,3 +509,8 @@ p{
 .url-repo a{
   color: black;
 }
+
+.url-to-the-project a{
+  color: black;
+  margin-bottom: 5px;
+}

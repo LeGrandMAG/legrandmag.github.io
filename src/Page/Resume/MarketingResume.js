@@ -117,22 +117,19 @@ className='section'>
 
       <header style={{width:'100%'}}>
         <div style={{width:'100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start'}}>
-          <h3>Magloire Mukendi</h3>
-          <img src={photo} style={{width:120, height:'auto', borderRadius:5}}>
-          </img>
+          <h3 style={{marginBottom:'30px'}}>Magloire Mukendi</h3>
+          {/*<img src={photo} style={{width:120, height:'auto', borderRadius:'100%'}}>*/}
           </div>
         <div className='contact-container'>
           <div className="contact-info">
-            <p>+821090261605</p>
             <p>magmukendi0@gmail.com</p>
             <p>Dongdaemun-gu, Seoul, South Korea</p>
           </div>
           <div className='link-status'>
           <a href="https://linkedin.com/in/magmukendi" target='_blank'>linkedin.com/in/magmukendi</a>
             <p>Current visa status: <strong>D-10</strong></p>
-            <p>Korean Level: <strong>
-              TOPIK 4
-              </strong>
+            <p>
+            TOPIK 4 | TOEIC 945
               </p>
           </div>
         </div>
