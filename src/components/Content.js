@@ -21,7 +21,7 @@ function NavElement(props){
 function Navbar(){
     const [darkMode, setDarkMode] = useState(false)
     const [position, setPosition] = useState('start')
-    const toggle = (e) =>{
+    /*const toggle = (e) =>{
         let currentMode = "light"
         let nextMode ="dark"
         let x = document.querySelectorAll("." +currentMode)
@@ -51,7 +51,7 @@ function Navbar(){
         console.log(x)
 
         
-    }
+    }*/
     return (
         <nav className="nav">
             {/*<div className='switch-cont'>

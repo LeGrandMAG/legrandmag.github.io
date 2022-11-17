@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom'
-import { Navbar, Footer, AddForm} from './components/Content';
+import { Navbar, Footer} from './components/Content';
 import {useState, useEffect} from "react"
 //import logo from './logo.svg';
 import './App.css';
@@ -20,7 +20,7 @@ import Studio243 from './Page/Studio243'
 // import {Wrapper, Status} from "@googlemaps/react-wrapper"
 function App() {
   //const [state, setState] = useState()
-  const key ="AIzaSyB4eDBdG6YnpHEuodh2Wcr3rBIkEJeUowg"
+  //const key ="AIzaSyB4eDBdG6YnpHEuodh2Wcr3rBIkEJeUowg"
   //const url ="https://maps.googleapis.com/maps/api/js?key="+key
 
   const [showButton, setShowButton] = useState(false);
@@ -50,7 +50,7 @@ function App() {
   };
 
 
-  const url2 = "https://swapi.dev/api/people/1"
+ // const url2 = "https://swapi.dev/api/people/1"
 
   
   
