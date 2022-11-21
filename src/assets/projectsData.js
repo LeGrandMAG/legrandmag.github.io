@@ -1,8 +1,16 @@
 import nanoid from 'nano-id'
-export default  [
+export const myProject = [
     {
         id: nanoid(),
-        title: "Twitter character counter",
+        title: "243 Studio Portfolio",
+        description:"A Single page application that displays all the graphic design project I have worked on.",
+        illustration:"./projects/meme.gif",
+        link:"https://astonishing-piroshki-1236ad.netlify.app/",
+        sourceCode: "https://github.com/243Studio/243studio"  
+    },
+    {
+        id: nanoid(),
+        title: "Twitter Readability",
         description:"This is a simple project to help the user make a draft of his tweet before publishing it. It help the user know how many character he has typed, how many words he has typed and how many are left.",
         illustration:"gif file",
         link:"https://magmukendi.me/Tweets-Count",
@@ -26,6 +34,14 @@ export default  [
     },
     {
         id: nanoid(),
+        title: "Memory Game",
+        description:"A Memory Game with dog pictures",
+        illustration:"./projects/meme.gif",
+        link:"https://magmukendi.me/memory-game",
+        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+    },
+    {
+        id: nanoid(),
         title: "Quicky Meme",
         description:"This is Meme generator. It allows the user to choose among famous random meme images and make a meme out of it in seconds. The user can also download the image if he wants or share it directly on social media.",
         illustration:"./projects/meme.gif",
@@ -39,15 +55,8 @@ export default  [
         illustration:"./projects/meme.gif",
         link:"https://magmukendi.me/wepoPriceCalculator",
         sourceCode: "https://github.com/LeGrandMAG/wepoPriceCalculator"  
-    },
-    {
-        id: nanoid(),
-        title: "Memory Game",
-        description:"A Memory Game with dog pictures",
-        illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
     }
+    
 ]
 
 export const otherProject = [
@@ -85,7 +94,7 @@ export const upcomingProjects = [
         title: "243 Studio Portfolio Sites",
         description:"A Single page application that displays all the graphic design project I have worked on.",
         illustration:"./projects/meme.gif",
-        link:"243studio.github.io/243Studio",
+        link:"https://astonishing-piroshki-1236ad.netlify.app/",
         sourceCode: "https://github.com/243Studio/243studio"  
     },
     {

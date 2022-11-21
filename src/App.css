@@ -189,7 +189,6 @@ nav ul{
 }
 /*PUBLICATION */
 
-
 .publication{
   margin: auto;
   width: 100%;
@@ -278,6 +277,40 @@ nav ul{
 
 
 /*Project */
+
+.projectlink{
+  color:white;
+  font-size: 12px;
+  text-decoration: none;
+  background: rgb(50,50,50);
+  padding: 3px 8px;
+  border-radius: 5px;
+  width:fit-content;
+  align-self: center;
+}
+.projectlink:hover{
+  opacity: 1;
+  background-color: black;
+  color: white;
+}
+.project-title{
+  font-size: 14px;
+  font-weight: 600;
+}
+.project-element{
+  width:45%;
+}
+.project-element-child{
+  border: 1px solid black;
+  width: 300px;
+  max-height: max-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
 .project-container, .home-container{
   width: 80%;
   padding: 3rem 0rem 3rem 0rem;
@@ -288,11 +321,14 @@ nav ul{
 .project-container{
   transition: 01s ease-in-out;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: 01s ease-in-out;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  box-sizing: border-box;
+  width:50%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .lili{
   text-decoration: none;
@@ -377,6 +413,38 @@ p{
   top:unset;
   bottom: 30%;
 
+  }
+  .project-container{
+    width:300px;
+    
+  }
+  .project-element{
+    width: 100%
+  }
+  .project-element-child{
+    height:max-content;
+  }
+}
+@media (max-width: 550px){
+  .studio243{
+    max-width: 100%;
+  }
+  .switch-cont{
+  left:0%;
+  left:30%;
+  top:unset;
+  bottom: 30%;
+
+  }
+  .project-container{
+    width:300px;
+    
+  }
+  .project-element{
+    width: 100%
+  }
+  .project-element-child{
+    height:max-content;
   }
 }
 
@@ -514,3 +582,4 @@ p{
   color: black;
   margin-bottom: 5px;
 }
+
