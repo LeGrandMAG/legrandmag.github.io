@@ -1,36 +1,37 @@
 import React from 'react'
-//import { Icon } from '@mui/material' 
-//import JavascriptIcon from '@mui/icons-material/Javascript';
+import { myProject } from '../assets/projectsData';
 //import { Link } from "react-router-dom";
 
-/*function ProjectElement(){
+function ProjectElement(props){
     return(
-        <div className="project-el">
-            
-            <h5>Project Name</h5>
-            <p>Project Description</p>
-            <a href="/solide">Link to Project</a>
+        <div className="project-element" >
+            <div className='project-element-child'>
+
+            <h5 className="project-title">{props.name}</h5>
+            <p>{props.description}</p>
+            <a className="projectlink" target="_blank" href={props.link}>Live version</a>
             <div>
-                <JavascriptIcon/>
             </div>
-            <hr/>
+            </div>
         </div>
     )
-} */
+} 
 
 function Projects() {
+
+
+    let projectElements = myProject.map(project=>{
+        return(
+            <ProjectElement
+            key={project.id}
+            name={project.title}
+            description={project.description}
+            link={project.link}/>
+        )
+    })
   return (
     <div className="project-container">
-               
-        <a className = "lili  light" href="https://astonishing-piroshki-1236ad.netlify.app/" target="_blank">243 Studio Portfolio</a>
-        <a className = "lili  light" href="https://magmukendi.me/random-activities/" target="_blank">Random Activities</a>
-        <a className = "lili  light" href="https://magmukendi.me/quickymeme" target="_blank">Meme Generator</a>
-        <a className = "lili  light" href="https://magmukendi.me/Tenzi-Game" target="_blank">Tenzi Game</a>
-        <a className = "lili  light" href="https://magmukendi.me/wepoPriceCalculator" target="_blank">Wepo Price Calculator</a>
-        <a className = "lili  light" href=" http://magmukendi.me/Tweets-Count/" target="_blank">Tweets Word Counter</a>
-        <a className = "lili  light" href="https://magmukendi.me/memory-game" target="_blank">Memory Game</a>
-        <a className = "lili  light" href="https://magmukendi.me/pianonotes" target="_blank">Piano Notes Player 1.0</a>
-
+               {projectElements}
     </div>
   )
 }
