@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2912982.css",
-    "main.js": "/static/js/main.f5581a58.js",
+    "main.js": "/static/js/main.7fdc3b27.js",
     "static/js/787.557cb7af.chunk.js": "/static/js/787.557cb7af.chunk.js",
     "static/media/portfolio.jpg": "/static/media/portfolio.57f7d80fd8b4343b8f74.jpg",
     "static/media/my_text.png": "/static/media/my_text.f8b1c16fad3fc5126591.png",
@@ -9,11 +9,11 @@
     "static/media/precolonialBlackAfrica.jpg": "/static/media/precolonialBlackAfrica.3c21a73fa8131cd4149a.jpg",
     "index.html": "/index.html",
     "main.a2912982.css.map": "/static/css/main.a2912982.css.map",
-    "main.f5581a58.js.map": "/static/js/main.f5581a58.js.map",
+    "main.7fdc3b27.js.map": "/static/js/main.7fdc3b27.js.map",
     "787.557cb7af.chunk.js.map": "/static/js/787.557cb7af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2912982.css",
-    "static/js/main.f5581a58.js"
+    "static/js/main.7fdc3b27.js"
   ]
 }
