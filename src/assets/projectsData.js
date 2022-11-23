@@ -48,14 +48,14 @@ export const myProject = [
         link:"https://magmukendi.me/quickymeme/",
         sourceCode: "https://github.com/LeGrandMAG/quickymeme"  
     },
-    {
+    /*{
         id: nanoid(),
         title: "WEPO Price Calculator",
         description:"A Price calculator for WEPO Product",
         illustration:"./projects/meme.gif",
         link:"https://magmukendi.me/wepoPriceCalculator",
         sourceCode: "https://github.com/LeGrandMAG/wepoPriceCalculator"  
-    }
+    }*/
     
 ]
 
