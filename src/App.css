@@ -297,21 +297,17 @@ nav ul{
   font-size: 14px;
   font-weight: 600;
 }
-.project-element{
-  width:45%;
-}
+
 .project-element-child{
+  grid-template-rows: subgrid;
+  display: grid;
   border: 1px solid black;
-  width: 300px;
-  max-height: max-content;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-columns: subgrid;
+  justify-items: center;
 }
-.project-container, .home-container{
+.home-container{
   width: 80%;
   padding: 3rem 0rem 3rem 0rem;
   /*border: 1px solid var(--dark);*/
@@ -319,16 +315,13 @@ nav ul{
   ;
 }
 .project-container{
+  padding: 2rem;
   transition: 01s ease-in-out;
-  display: flex;
-  flex-direction: row;
-  transition: 01s ease-in-out;
-  justify-content: left;
-  align-items: center;
-  box-sizing: border-box;
-  width:50%;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:1rem;
+  justify-items: center;
+  width:60%;
 }
 .lili{
   text-decoration: none;
@@ -342,7 +335,6 @@ nav ul{
   transition: 01s ease-in-out;
   background-color: transparent;
   transition: 01s ease-in-out;
-;
 }
 
 .project-container .dark{
@@ -416,13 +408,13 @@ p{
   }
   .project-container{
     width:300px;
+    grid-template-columns: 1fr;
     
   }
   .project-element{
     width: 100%
   }
   .project-element-child{
-    height:max-content;
   }
 }
 @media (max-width: 550px){

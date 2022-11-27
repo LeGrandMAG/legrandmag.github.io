@@ -4,16 +4,12 @@ import { myProject } from '../assets/projectsData';
 
 function ProjectElement(props){
     return(
-        <div className="project-element" >
             <div className='project-element-child'>
 
             <h5 className="project-title">{props.name}</h5>
             <p>{props.description}</p>
-            <a className="projectlink" target="_blank" href={props.link}>Live version</a>
-            <div>
+            <a className="projectlink" target="_blank" href={props.link}>Live version</a>            
             </div>
-            </div>
-        </div>
     )
 } 
 
