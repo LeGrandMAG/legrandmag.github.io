@@ -1,0 +1,12 @@
+.topic-container{
+    font-family:"Montserrat", sans-serif;
+    background: white;
+    height: 30px;
+    border: 1px rgb(200,200,200) solid;
+    padding: 5px 10px;
+    font-size: 10px;
+    margin:2rem;
+    align-self: flex-start;
+    justify-self: left;
+
+}
