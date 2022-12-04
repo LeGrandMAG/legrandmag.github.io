@@ -12,7 +12,7 @@ function Home() {
         </p>
         <figure>
         <a href="https://holopin.io/@legrandmag" target="_blank">
-          <img style={{height:'200px', margin: '5px'}} src="https://holopin.me/legrandmag" />
+          <img style={{width:'100%', margin: '5px'}} src="https://holopin.me/legrandmag" />
           </a>
         <figcaption style={{fontSize:'9px', fontStyle:'italic'}}>My Holopin badgets collected during my the 2022 Hacktoberfest</figcaption>
         </figure>

@@ -6,7 +6,7 @@ import './App.css';
 import Publication from './Page/Publication';
 
 import Home from './Page/Home'
-import Projects from './Page/Projects'
+import Projects from './Page/Projects/Projects'
 import Culture from './Page/Culture'
 import NotFound from './Page/Notfound'
 import FrontEndResume from './Page/Resume/FrontEndResume'

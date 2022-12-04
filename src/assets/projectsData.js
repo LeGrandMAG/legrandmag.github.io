@@ -1,51 +1,56 @@
 import nanoid from 'nano-id'
+
+
 export const myProject = [
     {
         id: nanoid(),
         title: "243 Studio Portfolio",
         description:"A Single page application that displays all the graphic design project I have worked on.",
-        illustration:"./projects/meme.gif",
+        illustration:"https://github.com/243Studio/gif/raw/main/243studio.gif",
+        technologies: ["Vanilla Javascript", "CSS & HTML"],
         link:"https://astonishing-piroshki-1236ad.netlify.app/",
+        exp:"The project is a showcase all the works from 243 studio. Moving the mouse around allow the user to see all the works on over another. Clicking on an image will display more details about the project.",
         sourceCode: "https://github.com/243Studio/243studio"  
     },
     {
         id: nanoid(),
         title: "Twitter Readability",
         description:"This is a simple project to help the user make a draft of his tweet before publishing it. It help the user know how many character he has typed, how many words he has typed and how many are left.",
-        illustration:"gif file",
+        illustration:"https://github.com/243Studio/gif/raw/main/twitter.gif",
+        technologies: ["Vanilla Javascript", "CSS & HTML"],
         link:"https://magmukendi.me/Tweets-Count",
+        exp:'The project analyze the inputed text, counts the number of characters, words, sentences and display the result of the Coleman-Liau Index of redability. It also allow the user to copy the text to the clipboard.',
         sourceCode: ""
     },
     {
         id: nanoid(),
         title: "Pianos Notes Player",
         description:"This is a simple piano notes projects",
-        illustration:"./projects/piano.gif",
+        illustration:"https://github.com/243Studio/gif/raw/main/pianonotes.png",
+        technologies: ["React","Vanilla Javascript", "CSS & HTML"],
         link:"https://magmukendi.me/pianonotes/",
+        exp:"The project is a simple Piano emulator. When a button is clicked it plays the displayed note, with a piano sound.",
         sourceCode: "https://github.com/LeGrandMAG/pianonotes/tree/master/pianonotes"
     },
     {
         id: nanoid(),
         title: "Tenzi Game",
         description:"A Simple Tenzi Game",
-        illustration:"./projects/tenzi.gif",
+        illustration:"https://github.com/243Studio/gif/raw/main/tenzi.gif",
         link:"https://magmukendi.me/Tenzi-Game",
+        technologies: ["React", "CSS & HTML"],
+        exp:"The project display a button that when clicked will start the Tenzi game. Every time the user touch a shuffle button, it will shuffle the number on the card except for the card that have been selected by the user.\n\n For the user to be able to select a card he just need to click on it. The user will be given 60 seconds. If he is able to select all the identical number on the screen he will be congratulated with a we did it song.",
         sourceCode: "https://github.com/LeGrandMAG/Tenzi-Game"
     },
-    {
-        id: nanoid(),
-        title: "Memory Game",
-        description:"A Memory Game with dog pictures",
-        illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
-    },
+    
     {
         id: nanoid(),
         title: "Quicky Meme",
         description:"This is Meme generator. It allows the user to choose among famous random meme images and make a meme out of it in seconds. The user can also download the image if he wants or share it directly on social media.",
-        illustration:"./projects/meme.gif",
+        illustration:"https://github.com/243Studio/gif/raw/main/meme.gif",
         link:"https://magmukendi.me/quickymeme/",
+        technologies: ["React", "CSS & HTML"],
+        exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
         sourceCode: "https://github.com/LeGrandMAG/quickymeme"  
     },
     /*{
@@ -66,6 +71,8 @@ export const otherProject = [
         description:"A mobile application for buying and selling second hand products.",
         illustration:"./projects/meme.gif",
         link:"https://magmukendi.me/memory-game",
+        technologies: ["React","React native"],
+        exp:"This project",
         sourceCode: "https://github.com/LeGrandMAG/memory-game"  
     },
     {
@@ -84,6 +91,16 @@ export const otherProject = [
         link:"https://magmukendi.me/memory-game",
         sourceCode: "https://github.com/LeGrandMAG/memory-game"  
     },
+    {
+        id: nanoid(),
+        title: "Memory Game",
+        description:"A Memory Game with dog pictures",
+        illustration:"./projects/meme.gif",
+        link:"https://magmukendi.me/memory-game",
+        technologies: ["React", "CSS & HTML"],
+        exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
+        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+    }
     
 ]
 

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import { Label } from '@mui/icons-material';
 /*This is the nav element of the app*/
-
+import './Component.css'
 function NavElement(props){
     return(
         <div className="navElement ">
