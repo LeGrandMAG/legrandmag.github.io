@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import { myProject } from '../../assets/projectsData';
-import img from "../../assets/gif/twitter.gif"
 import './Projects.css'
 //import { Link } from "react-router-dom";
 

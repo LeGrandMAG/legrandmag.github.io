@@ -1,5 +1,5 @@
-import {blog, db} from './index'
-import {addDoc, setDoc, collection, doc, Firestore, getFirestore, getDoc} from 'firebase/firestore'
+import {db} from './index'
+import {setDoc, collection, doc, getDoc} from 'firebase/firestore'
 
 
 function saveBlog(title, data, topics){
