@@ -48,84 +48,9 @@ body{
   flex-direction: column;
 }
 
-/*NAV BAR=============================================*/
 
-nav{
-  position: absolute;
-  background-color: white;
-  width:100%;
-  height: fit-content;
-  padding:0.5rem 0rem;
-  top:0%;
-  z-index: 1;
-  margin-bottom:10px;
-}
 
-.switch-cont{
-  border: 0.01rem solid var(--dark);
-  position:fixed;
-  left:20%;
-  top: 2px;
-  margin-left: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  transform: scale(0.8);
-  background: white;
-}
-.switch-cont p{
-  margin:0px;
-}
-.switch-container{
-  border:1px solid #051A36;
-  border-radius: 30px;
-  height: 20px;
-  width: 45px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.switch-container:hover{
-cursor: pointer;
-}
-.switch{
-  height: 24px;
-  width:24px;
-  background: white;
-  border-radius: 30px;
-  background: var(--secondary);
 
-}
-nav ul{
-  margin: auto;
-  width: 360px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.navElement .anchor{
-  text-decoration: none;
-  color: var(--dark);
-  padding: 5px;
-  font-size: 0.8rem;
-  transition: 0.25s;
-  margin: 5px;
-}
-
-.navElement .anchor:hover{
-  opacity: 1;
-  color: white;
-  background-color: var(--dark);
-  transition: 0.2s;
-
-}
 #myname{
   padding: 3px 15px;
   font-size: 0.7rem;
@@ -240,126 +165,11 @@ nav ul{
   }
 }
 
-/*Footer ========*/
-
-.footer{
-  position: relative;
-  bottom: 60%;
-  width:100%;
-  padding: 2rem 0rem 2rem 0rem;
-  transition: 01s ease-in-out;
-}
-
-.footer hr, nav hr{
-  width: 35%;
-  margin:auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background: var(--dark);
-}
-.footer span{
-  font-size: 14px;
-  padding: 10px;
-  transition: 01s ease-in-out;
-
-}
-
-.footer span:hover{
-  color: #1781C2;
-  opacity: 1;
-}
-.footer p{
-  margin: 1rem 0rem 0.5rem 0rem;
-  font-size: 8px;
-  transition: 01s ease-in-out;
-
-}
 
 
-/*Project */
 
-.projectlink{
-  color:white;
-  font-size: 12px;
-  text-decoration: none;
-  background: rgb(50,50,50);
-  padding: 3px 8px;
-  border-radius: 5px;
-  width:fit-content;
-  align-self: center;
-}
-.projectlink:hover{
-  opacity: 1;
-  background-color: black;
-  color: white;
-}
-.project-title{
-  font-size: 14px;
-  font-weight: 600;
-}
-.project-element{
-  width:45%;
-}
-.project-element-child{
-  border: 1px solid black;
-  width: 300px;
-  max-height: max-content;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
-}
-.project-container, .home-container{
-  width: 80%;
-  padding: 3rem 0rem 3rem 0rem;
-  /*border: 1px solid var(--dark);*/
-  transition: 01s ease-in-out;
-  ;
-}
-.project-container{
-  transition: 01s ease-in-out;
-  display: flex;
-  flex-direction: row;
-  transition: 01s ease-in-out;
-  justify-content: left;
-  align-items: center;
-  box-sizing: border-box;
-  width:50%;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.lili{
-  text-decoration: none;
-  font-size: 14px;
-  margin-bottom: 10px;
-  transition: 01s ease-in-out;
-  width:fit-content;
-}
-.project-container .light{
-  color:var(--dark);
-  transition: 01s ease-in-out;
-  background-color: transparent;
-  transition: 01s ease-in-out;
-;
-}
 
-.project-container .dark{
-  align-self: center;
-  color: white;
-  transition: 01s ease-in-out;
-  background-color: transparent;
-  transition: 01s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.lili:hover{
-  color:#1781C2;
-  transition: 0.25s ease-in-out;
-}
+
 /*===========================PAGE NOT FOUND */ 
 
 p{
@@ -394,7 +204,7 @@ p{
   border: none;
   height: 40px;
   width: 40px;
-  z-index: 10;
+  z-index: 2;
   /*box-shadow: 0 5px 10px #ccc;*/
 }
 
@@ -416,14 +226,13 @@ p{
   }
   .project-container{
     width:300px;
+    grid-template-columns: 1fr;
     
   }
   .project-element{
     width: 100%
   }
-  .project-element-child{
-    height:max-content;
-  }
+
 }
 @media (max-width: 550px){
   .studio243{

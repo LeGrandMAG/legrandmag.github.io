@@ -6,13 +6,14 @@ import './App.css';
 import Publication from './Page/Publication';
 
 import Home from './Page/Home'
-import Projects from './Page/Projects'
+import Projects from './Page/Projects/Projects'
 import Culture from './Page/Culture'
 import NotFound from './Page/Notfound'
 import FrontEndResume from './Page/Resume/FrontEndResume'
 import MarketingResume from './Page/Resume/MarketingResume'
 
 import Studio243 from './Page/Studio243'
+import {BlogDetail, BlogList, EditorElement} from './Page'
 
 
 
@@ -68,6 +69,9 @@ function App() {
         <Route path="resume/1" element={<FrontEndResume/>}/>
         <Route path="resume/2" element={<MarketingResume/>}/>
         <Route path="studio" element={<Studio243/>}/>
+        <Route path="blog/" element = {<BlogList/>} />
+        <Route path="blog/:id" element = {<BlogDetail/>} />
+        <Route path="labo" element = {<EditorElement/>} />
         <Route path="/*" element={<NotFound/>}/>
 
       </Routes>
