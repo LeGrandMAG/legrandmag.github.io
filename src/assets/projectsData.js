@@ -53,6 +53,16 @@ export const myProject = [
         exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
         sourceCode: "https://github.com/LeGrandMAG/quickymeme"  
     },
+    {
+        id: nanoid(),
+        title: "Random Activities",
+        description:"A web application that suggest the bored user what to do on that day",
+        illustration:"https://github.com/243Studio/gif/raw/main/random.gif",
+        link:"https://magmukendi.me/random-activities/",
+        technologies: ["React", "CSS & HTML"],
+        exp:"This project give activities suggestion to the user. If the user click the button he will be prompted with another activity.",
+        sourceCode: "https://github.com/LeGrandMAG/random-activities"  
+    }
     /*{
         id: nanoid(),
         title: "WEPO Price Calculator",
@@ -100,7 +110,8 @@ export const otherProject = [
         technologies: ["React", "CSS & HTML"],
         exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
         sourceCode: "https://github.com/LeGrandMAG/memory-game"  
-    }
+    },
+    
     
 ]
 
