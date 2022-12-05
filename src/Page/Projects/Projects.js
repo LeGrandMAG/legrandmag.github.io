@@ -1,10 +1,8 @@
-import { Translate } from '@mui/icons-material';
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from 'react';
 import { myProject } from '../../assets/projectsData';
 import './Projects.css'
 //import { Link } from "react-router-dom";
-let mouse = {top:0, left:0}
 function ProjectElement(props){
   const [display, setDisplay] = useState(false)
   const [showDemo, setShowDemo] = useState(false)

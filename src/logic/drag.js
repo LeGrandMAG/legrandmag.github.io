@@ -6,7 +6,9 @@ function handlePointerDown(e, setDrag)
 
 function handlePointerMove(e,isDragging)
 {
-    if(isDragging)   
+    if(isDragging){
+        return 0;
+    }
 }
 function onPointerUp(e)
 {
