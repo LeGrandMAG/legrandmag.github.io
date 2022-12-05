@@ -5,7 +5,7 @@ import './Projects.css'
 //import { Link } from "react-router-dom";
 
 function ProjectElement(props){
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState(true)
     console.log(props.tech)
     function toggleDisplay(){
       setDisplay(prev => !prev)
@@ -14,9 +14,9 @@ function ProjectElement(props){
     let techS = props.tech.map(item =><li key={props.tech.indexOf(item)}>{item}</li>)
 
     return(
-            <div onClick={toggleDisplay} className='project-element-child'>
+            <div  className='project-element-child'>
               {display && (<div className="display-project">
-                 {/*<button onClick={toggleDisplay} className="close-project">X</button>*/}
+                 <button onClick={toggleDisplay} className="close-project">X</button>
                 <div className='project-content'>
                   <h3>{props.name}</h3>
                   <img className='project-image' src={props.illust}></img>
@@ -35,7 +35,7 @@ function ProjectElement(props){
                 </div>)}
               <h5 className="project-title">{props.name}</h5>
               <p>{props.description}</p>
-              
+              <p onClick={toggleDisplay}><strong>MORE DETAILS</strong></p>
             </div>
     )
 } 
