@@ -105,24 +105,29 @@
   }
   .close-project{
     all:unset;
-    position:absolute;
-    right: 15px;
-    top:15px;
-    color:white;
-    background: black;
+    position:sticky;
+    top:0%;
+    float: inline-end;
+    margin-top: 0px;
+    margin-right:20px;
+    color:black;
+    background: white;
     width: max-content;
-    padding: 0px 7px;
+    padding: 0px 6px;
     height: fit-content;
     transition: 0.3s ease-in-out;
     border-radius: 100%;
     font-weight: 600;
+    border: 1px solid black;
+  }
+  strong{
+    cursor: pointer;
   }
 
   .close-project:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     transition: 0.3s ease-in-out;
-    border: 1px solid black
   }
 
   .link-container{
