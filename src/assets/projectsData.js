@@ -1,5 +1,5 @@
 import nanoid from 'nano-id'
-
+import { homeUrl } from '../components/data'
 
 export const myProject = [
     {
@@ -18,7 +18,7 @@ export const myProject = [
         description:"This is a simple project to help the user make a draft of his tweet before publishing it. It help the user know how many character he has typed, how many words he has typed and how many are left.",
         illustration:"https://github.com/243Studio/gif/raw/main/twitter.gif",
         technologies: ["Vanilla Javascript", "CSS & HTML"],
-        link:"https://magmukendi.me/Tweets-Count",
+        link: homeUrl + "/Tweets-Count",
         exp:'The project analyze the inputed text, counts the number of characters, words, sentences and display the result of the Coleman-Liau Index of redability. It also allow the user to copy the text to the clipboard.',
         sourceCode: ""
     },
@@ -28,19 +28,19 @@ export const myProject = [
         description:"This is a simple piano notes projects",
         illustration:"https://github.com/243Studio/gif/raw/main/pianonotes.png",
         technologies: ["React","Vanilla Javascript", "CSS & HTML"],
-        link:"https://magmukendi.me/pianonotes/",
+        link: homeUrl + "/pianonotes/",
         exp:"The project is a simple Piano emulator. When a button is clicked it plays the displayed note, with a piano sound.",
-        sourceCode: "https://github.com/LeGrandMAG/pianonotes/tree/master/pianonotes"
+        sourceCode: "https://github.com/magmukendi/pianonotes/tree/master/pianonotes"
     },
     {
         id: nanoid(),
         title: "Tenzi Game",
         description:"A Simple Tenzi Game",
         illustration:"https://github.com/243Studio/gif/raw/main/tenzi.gif",
-        link:"https://magmukendi.me/Tenzi-Game",
+        link: homeUrl + "/Tenzi-Game",
         technologies: ["React", "CSS & HTML"],
         exp:"The project display a button that when clicked will start the Tenzi game. Every time the user touch a shuffle button, it will shuffle the number on the card except for the card that have been selected by the user.\n\n For the user to be able to select a card he just need to click on it. The user will be given 60 seconds. If he is able to select all the identical number on the screen he will be congratulated with a we did it song.",
-        sourceCode: "https://github.com/LeGrandMAG/Tenzi-Game"
+        sourceCode: "https://github.com/magmukendi/Tenzi-Game"
     },
     
     {
@@ -48,28 +48,28 @@ export const myProject = [
         title: "Quicky Meme",
         description:"This is Meme generator. It allows the user to choose among famous random meme images and make a meme out of it in seconds. The user can also download the image if he wants or share it directly on social media.",
         illustration:"https://github.com/243Studio/gif/raw/main/meme.gif",
-        link:"https://magmukendi.me/quickymeme/",
+        link: homeUrl + "/quickymeme/",
         technologies: ["React", "CSS & HTML"],
         exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
-        sourceCode: "https://github.com/LeGrandMAG/quickymeme"  
+        sourceCode: "https://github.com/magmukendi/quickymeme"  
     },
     {
         id: nanoid(),
         title: "Random Activities",
         description:"A web application that suggest the bored user what to do on that day",
         illustration:"https://github.com/243Studio/gif/raw/main/random.gif",
-        link:"https://magmukendi.me/random-activities/",
+        link: homeUrl + "/random-activities/",
         technologies: ["React", "CSS & HTML"],
         exp:"This project give activities suggestion to the user. If the user click the button he will be prompted with another activity.",
-        sourceCode: "https://github.com/LeGrandMAG/random-activities"  
+        sourceCode: "https://github.com/magmukendi/random-activities"  
     }
     /*{
         id: nanoid(),
         title: "WEPO Price Calculator",
         description:"A Price calculator for WEPO Product",
         illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/wepoPriceCalculator",
-        sourceCode: "https://github.com/LeGrandMAG/wepoPriceCalculator"  
+        link: homeUrl + "/wepoPriceCalculator",
+        sourceCode: "https://github.com/magmukendi/wepoPriceCalculator"  
     }*/
     
 ]
@@ -80,36 +80,36 @@ export const otherProject = [
         title: "WEPO's mobile App",
         description:"A mobile application for buying and selling second hand products.",
         illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
+        link: homeUrl + "/memory-game",
         technologies: ["React","React native"],
         exp:"This project",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+        sourceCode: "https://github.com/magmukendi/memory-game"  
     },
     {
         id: nanoid(),
         title: "Facebook Crawler",
         description:"A mobile application for buying and selling second hand products.",
         illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+        link: homeUrl + "/memory-game",
+        sourceCode: "https://github.com/magmukendi/memory-game"  
     },
     {
         id: nanoid(),
         title: "Cube Lab Mobile App",
         description:"A mobile application for buying and selling second hand products.",
         illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+        link: homeUrl + "/memory-game",
+        sourceCode: "https://github.com/magmukendi/memory-game"  
     },
     {
         id: nanoid(),
         title: "Memory Game",
         description:"A Memory Game with dog pictures",
         illustration:"./projects/meme.gif",
-        link:"https://magmukendi.me/memory-game",
+        link: homeUrl + "/memory-game",
         technologies: ["React", "CSS & HTML"],
         exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
-        sourceCode: "https://github.com/LeGrandMAG/memory-game"  
+        sourceCode: "https://github.com/magmukendi/memory-game"  
     },
     
     

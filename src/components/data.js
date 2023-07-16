@@ -8,20 +8,51 @@ export  const x =  [
     }
 ]
 
+export const homeUrl = "https://magmukendi.github.io"
 
 
 
-export const frontEndWork = [
+export const SEWork = [
+    {
+        company: "Naver Z (ZEPETO)",
+        position:'World Platform - Software Engineer Intern',
+        location: 'Seoul, South Korea',
+        date: 'July 2023 - Present',
+        responsibilities: [
+            "Added the QuickChat module to the Zepeto Module Importer",
+            "Added new features to the Gesture Module",
+            "Conducted R&D for the development of new SDKs"
+        ]
+    },
+    {
+        company: "Naver Z (ZEPETO)",
+        position:'Tech Evangelist Intern',
+        location: 'Seoul, South Korea',
+        date: 'April 2023 - July 2023',
+        responsibilities: [
+            "Provided technical support to partner companies while building their Zepeto worlds",
+            "Built different sample projects for Zepeto Beginner developpers.",
+        ]
+    },
+    {
+        company: "Schaeffler Korea",
+        position:'Software Engineer Intern',
+        location: 'Seoul, South Korea',
+        date: 'December 2022 - March 2023',
+        responsibilities: [
+            "Built the Schaeffler Seoul Office in the Metaverse using the Zepeto World SDK"
+        ]
+    },
     {
         company: "WEPO RDC",
-        position:'UI/UX Designer & FrontEnd Developer',
-        location: 'Seoul, South Korea',
+        position:'SoftwareEngineer Developer & Product Owner',
+        location: 'Remote - Part time',
         date: 'April 2021 - Present',
         responsibilities: [
             "Wrote functionalities requirement documents and guides to help smooth the development process.",
             "Illustrated design ideas using storyboards, process flows and wireframing for the multiple version of the application prototype.",
             "Conducted user research interview with up to 30 different users.",
-            "Implemented, iterated and maintained the web application and the mobile application components.",
+            "Implemented, iterated and maintained the web application and the different components of the mobile app.",
             "Collaborated with the team developers by conducting code reviews and sprints."
         ]
     },
@@ -58,7 +89,7 @@ export const LeaderExp = [
 export const marketingWork = [
     {
         company: "WEPO RDC",
-        position:'CEO, Sales Manager',
+        position:'CEO',
         location: 'Seoul, South Korea',
         date: 'April 2022 - Present',
         responsibilities: [
@@ -101,7 +132,7 @@ export const marketingWork = [
         ]
     },
     {
-        company: "Gold Ocean",
+        company: "GoldOcean Communication",
         position:'Marketing Assistant',
         location: 'Seoul, South Korea',
         date: 'March 2021 - September 2021',
@@ -219,11 +250,27 @@ export const cert = [
 
 export const OpenSourceContribution = [
     {
+        name: "Zepeto Module Importer",
+        description: "A Module that help easily imports different modules in Unity",
+        link:"https://github.com/JasperGame/zepeto-modules",
+        repo: "https://github.com/JasperGame/zepeto-modules/pulls?q=is%3Apr+is%3Aclosed",
+        commit: "https://github.com/JasperGame/zepeto-modules/pull/10",
+        work:["Added a looping feature to the Gesture module", "Added the QuickChat Module", "Fixed multiple bugs"]
+    },
+    {
+        name: "Azure Remote Rendering",
+        description: "An SDK for the Azure's service that enables you to render highly complex 3D models in real time.",
+        link:"https://github.com/Azure/azure-remote-rendering",
+        repo: "https://github.com/Azure/azure-remote-rendering/issues/94",
+        commit: "https://github.com/Azure/azure-remote-rendering/issues/94",
+        work:["Diagnosed a bug and proposed a fix for the conversion of the .FBX to .arrAsset when the json file is parsed"]
+    },
+    {
         name: "Developer Quiz Site",
         description: "A companion to Learn to Code RPG Game, a visual nove game developed by freeCodeCamp to help people learn how to code.",
         link:"https://developerquiz.org/",
         repo: "https://github.com/freeCodeCamp/Developer_Quiz_Site",
-        commit: "https://github.com/freeCodeCamp/Developer_Quiz_Site/commits?author=LeGrandMAG",
+        commit: "https://github.com/freeCodeCamp/Developer_Quiz_Site/commits?author=magmukendi",
         work:["Refactored the code of the Hero section component.", "Fixed a typo in the javascript questions."]
     },
     {
@@ -231,26 +278,9 @@ export const OpenSourceContribution = [
         description: "A mobile application that let the user control the CyBear Jinni Hub a software to control smart devices while keeping user privacy.",
         link: "https://cybearjinni.com/",
         repo: "https://github.com/CyBear-Jinni/cbj_app",
-        commit: "https://github.com/CyBear-Jinni/cbj_app/commits/dev?author=LeGrandMAG",
+        commit: "https://github.com/CyBear-Jinni/cbj_app/commits/dev?author=magmukendi",
         work:["Provided translation in French from DRCongo"]
-    },
-    {
-        name: "Clipboard",
-        description: "A Web based clipboard. the simplest method for transmitting text data across internet-connected devices.",
-        link: "",
-        repo: "https://github.com/fadkeabhi/CLIPBOARD",
-        commit: "https://github.com/fadkeabhi/CLIPBOARD/pull/68/commits",
-        work:["Updated the style of UI components."]
-    },
-    {
-        name: "React-drag-drop",
-        description: "A React component to upload image files by drag and drop.",
-        link: "",
-        repo: "https://github.com/fadkeabhi/CLIPBOARD",
-        commit: "https://github.com/fadkeabhi/CLIPBOARD/pull/68/commits",
-        work:["Refectored the code so that the user can customize the error message or the successful message when a picture is uploaded."]
-    },
-    
+    }
 ]
 
 
@@ -271,37 +301,37 @@ export const Projects = [
         name: "Random Activities",
         description: "A web app that suggests the user what to do as activity for that day.",
         technology: "HTML, CSS, React & Javascript",
-        link:"https://magmukendi.me/random-activities/"
+        link: homeUrl + "/random-activities/"
     },
-    {
+    /*{
         name: "Second-hand products Price Calculator",
         description:"A tool that helps the user estimates the value of a  second-products bought in Korean market and to be sold in the Congolese market.",
         technology:"Javascript & React",
-        link:"http://magmukendi.me/wepoPriceCalculator"
-    },
+        link: homeUrl + "/wepoPriceCalculator"
+    },*/
     {
         name: "Tweet Readability",
         description: " A web app that counts the number of characters and words typed by the user in realtime and notifies him before he reaches the limit set by twitter. This web app also assess the readability level of the text.",
         technology:" HTML, CSS, Vanilla Javascript",
-        link:"http://magmukendi.me/Tweets-Count/"
+        link: homeUrl + "/Tweets-Count/"
     },
     {
         name: "Meme Generator",
         description: "A Simple meme generator that helps the user generate meme and save in their computers in a matter of seconds.",
         technology:" HTML, CSS, Vanilla Javascript",
-        link:"https://magmukendi.me/quickymeme/"
+        link: homeUrl + "/quickymeme/"
     },
-    {
+    /*{
         name: "Tenzi Game",
         description: " A single player Tenzi game.",
         technology:"HTML, CSS, Javascript & React",
-        link:"https://magmukendi.me/Tenzi-Game/"
-    },
+        link: homeUrl + "/Tenzi-Game/"
+    },*/
     {
         name:"Piano Notes Player",
         description: "A Single Page Application that allows the user to play piano notes between C3 to C4.",
         technology:"HTML, Javascript & React",
-        link:"http://magmukendi.me/pianonotes"
+        link:homeUrl + "/pianonotes"
     }
 ]
 
@@ -315,7 +345,7 @@ export const Awards =
         org: "Sogang University"
 
     },
-    {
+    /*{
         name: "2022 Sogang University 13th Startup Competition",
         date: "April 2022",
         description: "Worked as the Project Manager,  UI/UX designer, market researcher in a team that developed an online platform for reducing unreliable transaction of second-hands products in DR Congo by providing reliable transactions channels for buyers and sellers.",
@@ -329,11 +359,11 @@ export const Awards =
         date: "December 2021",
         prize: "Prize of Excellence",
         org: "Sogang University"
-    },
+    },*/
     {
         name: "2021 Africa Startup Idea",
-        description: "Worked in a team to raise awareness about diversity and promoted multicultural programs on Campus.  ",
-        date: "November 2021",
+        description: "Worked as the Project Manager,  UI/UX designer, market researcher in a team that developed an online platform for reducing unreliable transaction of second-hands products in DR Congo by providing reliable transactions channels for buyers and sellers.",
+        date: "Nov. 2021",
         prize: "TOP 10 best Startup | Seoul, South Korea",
         org: "Korean African Foundation"
 

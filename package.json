@@ -1,10 +1,10 @@
 {
-  "name": "LeGrandMAG.github.io",
+  "name": "magmukendi.github.io",
   "version": "0.1.0",
-  "homepage": "https://LeGrandMAG.github.io",
+  "homepage": "https://magmukendi.github.io",
   "private": true,
   "license": "MIT",
-  "author": "Mag Mukendi <magmukendi0@gmail.com> (https://magmukendi.me/)",
+  "author": "Mag Mukendi <magmukendi0@gmail.com> (https://magmukendi.github.io/)",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

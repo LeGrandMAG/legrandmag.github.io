@@ -1,6 +1,8 @@
 import React from 'react'
 //import photo from '../../assets/img/ps.jpg'
-import {frontEndWork, LeaderExp, OpenSourceContribution, cert, Awards, Projects} from '../../components/data'
+import './Resume.css'
+
+import {SEWork, LeaderExp, OpenSourceContribution, cert, Awards, Projects} from '../../components/data'
 import nanoid from 'nano-id'
 import { Link } from 'react-router-dom'
 
@@ -11,35 +13,30 @@ function Role(props){
 }
 function WorkExperience(props){
   return(
-  <>
-  <div className='section'>
-          <div className='section1'>
-            <p><strong>{props.company}
-            {props.compLocation && <span>, {props.compLocation}</span>}</strong></p>
-            <p>
-              <em>
+    <div className='section'>
+            <div className='section1'>
+              <p><strong>{props.company}{props.compLocation && <span>, {props.compLocation}</span>}</strong></p>
+              <p>
+                <em className='positionStyle'>
 
-            {props.position}
-            </em>
-            </p>
+              {props.position}
+              </em>
+              </p>
 
-          </div>
-          <div className='section2'> 
-          <p><strong>
-
-          {props.location}
-          </strong>
-            </p>
-            <p>{props.date}</p>
             </div>
-        </div>
-  </>
-
+            <div className='section2'> 
+            <p><strong>
+            {props.location}
+            </strong>
+              </p>
+              <p>{props.date}</p>
+              </div>
+    </div>
   )
 }
-function FrontEndResume() {
+function SoftwareEngineerResume() {
 
-  const frontEndWorkElements = frontEndWork.map((item)=> <div key = {nanoid()}>
+  const SEWorkElements = SEWork.map((item)=> <div className = "unit" key = {nanoid()}>
   <WorkExperience
   compLocation = {item.companyLocation}
   company = {item.company}
@@ -49,7 +46,7 @@ function FrontEndResume() {
   key = {item.company}
   />
   <div   
-  key = {frontEndWork.indexOf(item)}
+  key = {SEWork.indexOf(item)}
   className='section1'>
     <ul className='section-bullet'>
       {item.responsibilities.map(role => <li key = {nanoid()}>
@@ -94,9 +91,9 @@ const ProjectsElements = Projects.map((item) =>{
 
 <div   
 key = {nanoid()}
-className='section1'>
-        <p style={{textAlign:"left", marginBottom:"5px"}} key = {nanoid()}>{item.description}</p>
-        {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a href={item.link}>LIVE VERSION</a></p>}
+className='sectionx'>
+        <p style={{textAlign:"left"}} key = {nanoid()}>{item.description}</p>
+        {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a className ="live-link" target='_blank' href={item.link}>LIVE VERSION</a></p>}
 
 </div>
   </div>  
@@ -155,10 +152,10 @@ className='section'>
 
   return (
     <div className = "resume_container">
-        <p className="okay">
+       {/* <p className="okay">
         This is my Software Engineering Resume. You can check out my   <Link className ="okay" to={"/resume/2"}>Marketing
             </Link> Resume 
-        </p>
+        </p>*/}
       <header style={{width:'100%'}}>
         <div style={{width:'100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start'}}>
         <h3 style={{marginBottom:'30px'}}>Magloire Mukendi</h3>
@@ -170,11 +167,11 @@ className='section'>
             <p>Dongdaemun-gu, Seoul, South Korea</p>
           </div>
           <div className='link-status'>
-            <a href="https://github.com/LeGrandMAG" target='_blank'>github.com/LeGrandMAG</a>
+            <a href="https://github.com/magmukendi" target='_blank'>github.com/magmukendi</a>
 
             <p>Current visa status: <strong>D-10</strong></p>
             <p>
-              TOPIK 4 | TOEIC 945
+              TOPIK 4
               </p>
           </div>
         </div>
@@ -186,22 +183,27 @@ className='section'>
         </h4>
         <div className='section'>
 
-        <div className="section1">
-          <p><strong>Hankuk University of Foreign Studies</strong></p>
-          <p>Bachelor of Arts, Major: Business Administraion, Minor: Computer Engineering Systems</p>
+          <div className="section1">
+            <p><strong>Hankuk University of Foreign Studies</strong></p>
+            <p>Bachelor of Arts, Major: Business Administraion, Minor: Computer Engineering Systems</p>
+          </div>
+          <div className='section2'>
+            <p><strong>Seoul,South Korea</strong></p>
+            <p>Graduated</p>
+          </div>
+          
         </div>
-        <div className='section2'>
-          <p><strong>Seoul,South Korea</strong></p>
-          <p>August 2018 - Present</p>
-        </div>
-        </div>
+        {/*<div className='section1'>
+            <p><strong>Relevant Course work</strong></p>
+            <p>Programming Languages, Data Structure, Introduction to Computer & Lab, Operating System, Computer Network, Computer Vision, Database Design, Capstone Design & Practice, Data Communication</p>
+          </div>*/}
       </div>
 
 
 
       <div className='section-container'>
         <h4 className='section-title'>EXPERIENCE</h4>
-       {frontEndWorkElements}
+       {SEWorkElements}
       </div>
       <div className='section-container'>
         <h4 className='section-title'> LEADERSHIP EXPERIENCE</h4>
@@ -227,4 +229,4 @@ className='section'>
   )
 }
 
-export default FrontEndResume
+export default SoftwareEngineerResume
