@@ -7,6 +7,7 @@ function ProjectElement(props){
   const [display, setDisplay] = useState(false)
   const [showDemo, setShowDemo] = useState(false)
 
+
     function toggleDisplay(){
       setDisplay(prev => !prev)
     }
@@ -24,38 +25,42 @@ function ProjectElement(props){
         disp.scrollBy(0,500)
       }
     }
- 
+
     let techS = props.tech.map(item =><li key={props.tech.indexOf(item)}>{item}</li>)
 
     return(
-            <div  className='project-element-child'>
-              {display && (<div className="display-project" id="disp">
-                <div className='close-project'>
+            <div   className='project-element-child'>
+              {display && (
 
-                <p className='close-project-text'>Click here to close</p>
-                 <button onClick={toggleDisplay} className="close-project-button">X</button>
-                </div>
-                <div className='project-content'>
-                  <h3 className='project-tt'>{props.name}</h3>
-                  <img alt={props.illust} className='project-image' src={props.illust}></img>
-                  <p>{props.description}</p>
-                    <p>
-                    Technologies used:
-                    </p>
-                    <ul className='tech-list'>
-                      {techS}</ul>
-                      <p>{props.exp}</p>
-                  {<iframe title={props.link} className='project-frame' id="project-frame" src={props.link} />}
-                        <p onClick ={toggleShowDemo} className="projectlink center" target="_blank" href={props.link}>{showDemo ? "Hide" :" Show"} Demo</p>
-                      <div className='link-container'>
-                        <a rel="noreferrer" className="projectlink" target="_blank" href={props.code}>Source code</a>            
-                        {showDemo && <a rel="noreferrer" className="projectlink" target="_blank" href={props.link}>Live version</a>}       
-                      </div>
-                </div>
-                </div>)}
+                <div className="display-project" id="display-container">
+
+
+                    <button className='close-project' onClick={toggleDisplay} >close</button>
+
+                  <div className='project-content'>
+                    <h3 className='project-tt'>{props.name}</h3>
+                    <img alt={props.illust} className='project-image' src={props.illust}></img>
+                    <p>{props.description}</p>
+                      <p>
+                      Technologies used:
+                      </p>
+                      <ul className='tech-list'>
+                        {techS}</ul>
+                        <p>{props.exp}</p>
+                    {props.viewDemo &&<iframe title={props.link} className='project-frame' id="project-frame" src={props.link} />}
+                          {props.viewDemo && <p onClick ={toggleShowDemo} className="projectlink center" target="_blank" href={props.link}>{showDemo ? "Hide" :" Show"} Demo</p>}
+                        <div className='link-container'>
+                          <a rel="noreferrer" className="projectlink" target="_blank" href={props.code}>Source code</a>            
+                          <a rel="noreferrer" className="projectlink" target="_blank" href={props.link}>Live version</a>  
+                        </div>
+                  </div>
+                
+
+              </div>
+)}
               <h5 className="project-title">{props.name}</h5>
               <p>{props.description}</p>
-              <p onClick={toggleDisplay}><strong>MORE DETAILS</strong></p>
+              <p onClick={toggleDisplay} ><strong>MORE DETAILS</strong></p>
             </div>
     )
 } 
@@ -74,7 +79,8 @@ function Projects() {
             illust={project.illustration}
             tech={project.technologies}
             exp={project.exp}
-            link={project.link}/>
+            link={project.link}
+            viewDemo={project.viewDemo}/>
         )
     })
   return (

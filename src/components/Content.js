@@ -35,11 +35,8 @@ function Navbar(){
                     link = "culture"
     />
                 
-                <NavElement 
-                    name= "PROJECTS"
-                    link = "projects"
-                />
-                */}
+                
+                
                 <NavElement 
                     name= "RESUME"
                     link = "resume/1"
@@ -47,6 +44,11 @@ function Navbar(){
                 <NavElement 
                     name= "BLOG"
                     link = "blog/"
+                />
+                */}
+                <NavElement 
+                    name= "PROJECTS"
+                    link = "projects"
                 />
                 {/*<NavElement
                 name="PROJECTS"
