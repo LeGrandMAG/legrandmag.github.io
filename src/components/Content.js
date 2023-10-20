@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
-import {useState} from 'react'
-import { Label } from '@mui/icons-material';
+
 /*This is the nav element of the app*/
 import './Component.css'
 function NavElement(props){
@@ -16,39 +15,7 @@ function NavElement(props){
 
 /*This is the main nav bar of the app*/
 function Navbar(){
-    const [darkMode, setDarkMode] = useState(false)
-    const [position, setPosition] = useState('start')
-    /*const toggle = (e) =>{
-        let currentMode = "light"
-        let nextMode ="dark"
-        let x = document.querySelectorAll("." +currentMode)
-        let q = document.querySelector('.switch-container')
 
-        if(darkMode){
-            
-            setDarkMode(false)
-            setPosition("end")
-            
-        } 
-        else{
-            setDarkMode(true)
-            currentMode ="dark"
-            nextMode = "light"
-            x = document.querySelectorAll("." +currentMode)
-            setPosition("start")
-            
-        } 
-        
-        for(let i of x){
-            i.classList.remove(currentMode)
-            i.classList.add(nextMode)
-        }
-        //e.target.style.justifyContent = position
-        q.style.justifyContent = position
-        console.log(x)
-
-        
-    }*/
     return (
         <nav className="nav">
             {/*<div className='switch-cont'>
@@ -77,6 +44,10 @@ function Navbar(){
                     name= "RESUME"
                     link = "resume/1"
                 />
+                <NavElement 
+                    name= "BLOG"
+                    link = "blog/"
+                />
                 {/*<NavElement
                 name="PROJECTS"
                 link = "Projects"
@@ -93,12 +64,12 @@ function Footer(){
         <footer className ="footer light">
             <hr/>
             <div>
-                <a href="https://www.linkedin.com/in/magmukendi/" target="_blank">
+                <a rel="noreferrer" href="https://www.linkedin.com/in/magmukendi/" target="_blank">
                     <span className='light'>                        
                         <i className="fa fa-linkedin"></i>
                     </span>
                 </a>
-                <a href="https://github.com/magmukendi" target="_blank">
+                <a rel="noreferrer" href="https://github.com/magmukendi" target="_blank">
                 <span className='light'>                       
                         <i className="fa fa-github"></i>
                     </span>
@@ -130,12 +101,12 @@ function Holopin(){
     return(
         <>
         <figure>
-        <a href="https://holopin.io/@LeGrandMAG" target="_blank">
-          <img style={{width:'100%', margin: '5px'}} src="https://holopin.me/LeGrandMAG" />
+        <a rel="noreferrer" href="https://holopin.io/@LeGrandMAG" target="_blank">
+          <img alt="badge Hacktoberfest" style={{width:'100%', margin: '5px'}} src="https://holopin.me/LeGrandMAG" />
           </a>
         <figcaption style={{fontSize:'9px', fontStyle:'italic'}}>My Holopin badgets collected during my the 2022 Hacktoberfest</figcaption>
         </figure>
         </>
     )
 }
-export  {Navbar, Footer}
+export  {Navbar, Holopin, Footer}

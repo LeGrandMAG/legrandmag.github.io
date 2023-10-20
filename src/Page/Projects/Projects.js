@@ -6,8 +6,7 @@ import './Projects.css'
 function ProjectElement(props){
   const [display, setDisplay] = useState(false)
   const [showDemo, setShowDemo] = useState(false)
-  const [position, setPosition] = useState({top: '50%', left:'50%'})
-  const [movable, setMovable] = useState(false)
+
     function toggleDisplay(){
       setDisplay(prev => !prev)
     }
@@ -38,7 +37,7 @@ function ProjectElement(props){
                 </div>
                 <div className='project-content'>
                   <h3 className='project-tt'>{props.name}</h3>
-                  <img className='project-image' src={props.illust}></img>
+                  <img alt={props.illust} className='project-image' src={props.illust}></img>
                   <p>{props.description}</p>
                     <p>
                     Technologies used:
@@ -46,11 +45,11 @@ function ProjectElement(props){
                     <ul className='tech-list'>
                       {techS}</ul>
                       <p>{props.exp}</p>
-                  {<iframe className='project-frame' id="project-frame" src={props.link} />}
+                  {<iframe title={props.link} className='project-frame' id="project-frame" src={props.link} />}
                         <p onClick ={toggleShowDemo} className="projectlink center" target="_blank" href={props.link}>{showDemo ? "Hide" :" Show"} Demo</p>
                       <div className='link-container'>
-                        <a className="projectlink" target="_blank" href={props.code}>Source code</a>            
-                        {showDemo && <a className="projectlink" target="_blank" href={props.link}>Live version</a>}       
+                        <a rel="noreferrer" className="projectlink" target="_blank" href={props.code}>Source code</a>            
+                        {showDemo && <a rel="noreferrer" className="projectlink" target="_blank" href={props.link}>Live version</a>}       
                       </div>
                 </div>
                 </div>)}

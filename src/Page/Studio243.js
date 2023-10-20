@@ -12,7 +12,7 @@ function Studio243(){
             
             </div>
             <hr/>
-            <img className="studio243"src={portfolio}/>
+            <img alt="studio 243" className="studio243"src={portfolio}/>
 
         </div>
     )

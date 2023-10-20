@@ -35,7 +35,7 @@ nav{
     height: 20px;
     width: 45px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
   }
   .switch-container:hover{
