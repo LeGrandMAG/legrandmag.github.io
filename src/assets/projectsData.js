@@ -8,7 +8,7 @@ export const myProject = [
         description:"A Single page application that displays all the graphic design project I have worked on.",
         illustration:"https://github.com/243Studio/gif/raw/main/243studio.gif",
         technologies: ["Vanilla Javascript", "CSS & HTML"],
-        link:"https://astonishing-piroshki-1236ad.netlify.app/",
+        link:"https://app.243studio.me",
         exp:"The project is a showcase all the works from 243 studio. Moving the mouse around allow the user to see all the works on over another. Clicking on an image will display more details about the project.",
         sourceCode: "https://github.com/243Studio/243studio"  
     },
