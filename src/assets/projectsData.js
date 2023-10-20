@@ -8,9 +8,10 @@ export const myProject = [
         description:"A Single page application that displays all the graphic design project I have worked on.",
         illustration:"https://github.com/243Studio/gif/raw/main/243studio.gif",
         technologies: ["Vanilla Javascript", "CSS & HTML"],
-        link:"https://astonishing-piroshki-1236ad.netlify.app/",
+        link:"https://app.243studio.me",
         exp:"The project is a showcase all the works from 243 studio. Moving the mouse around allow the user to see all the works on over another. Clicking on an image will display more details about the project.",
-        sourceCode: "https://github.com/243Studio/243studio"  
+        sourceCode: "https://github.com/243Studio/243studio",
+        viewDemo:true  
     },
     {
         id: nanoid(),
@@ -20,7 +21,8 @@ export const myProject = [
         technologies: ["Vanilla Javascript", "CSS & HTML"],
         link: homeUrl + "/Tweets-Count",
         exp:'The project analyze the inputed text, counts the number of characters, words, sentences and display the result of the Coleman-Liau Index of redability. It also allow the user to copy the text to the clipboard.',
-        sourceCode: ""
+        sourceCode: "",
+        viewDemo:false
     },
     {
         id: nanoid(),
@@ -30,7 +32,8 @@ export const myProject = [
         technologies: ["React","Vanilla Javascript", "CSS & HTML"],
         link: homeUrl + "/pianonotes/",
         exp:"The project is a simple Piano emulator. When a button is clicked it plays the displayed note, with a piano sound.",
-        sourceCode: "https://github.com/magmukendi/pianonotes/tree/master/pianonotes"
+        sourceCode: "https://github.com/magmukendi/pianonotes/tree/master/pianonotes",
+        viewDemo:false
     },
     {
         id: nanoid(),
@@ -40,7 +43,8 @@ export const myProject = [
         link: homeUrl + "/Tenzi-Game",
         technologies: ["React", "CSS & HTML"],
         exp:"The project display a button that when clicked will start the Tenzi game. Every time the user touch a shuffle button, it will shuffle the number on the card except for the card that have been selected by the user.\n\n For the user to be able to select a card he just need to click on it. The user will be given 60 seconds. If he is able to select all the identical number on the screen he will be congratulated with a we did it song.",
-        sourceCode: "https://github.com/magmukendi/Tenzi-Game"
+        sourceCode: "https://github.com/magmukendi/Tenzi-Game",
+        viewDemo:false
     },
     
     {
@@ -51,7 +55,8 @@ export const myProject = [
         link: homeUrl + "/quickymeme/",
         technologies: ["React", "CSS & HTML"],
         exp:"This project make an call to the imgflip API and fetch over 100 meme images and display it to the user.\n\nWe also have few buttons to help the user navigate from one image to another. If there is an image the appeal the user, he can then add a top text and a bottom text to the meme picture.\n\nIf the meme is what he was, he can directly download the image to his phone or PC.",
-        sourceCode: "https://github.com/magmukendi/quickymeme"  
+        sourceCode: "https://github.com/magmukendi/quickymeme",
+        viewDemo:false  
     },
     {
         id: nanoid(),
@@ -61,7 +66,8 @@ export const myProject = [
         link: homeUrl + "/random-activities/",
         technologies: ["React", "CSS & HTML"],
         exp:"This project give activities suggestion to the user. If the user click the button he will be prompted with another activity.",
-        sourceCode: "https://github.com/magmukendi/random-activities"  
+        sourceCode: "https://github.com/magmukendi/random-activities",
+        viewDemo:false  
     }
     /*{
         id: nanoid(),
