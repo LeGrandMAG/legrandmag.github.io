@@ -8,7 +8,7 @@ export const myProject = [
         description:"A Single page application that displays all the graphic design project I have worked on.",
         illustration:"https://github.com/243Studio/gif/raw/main/243studio.gif",
         technologies: ["Vanilla Javascript", "CSS & HTML"],
-        link:"https://astonishing-piroshki-1236ad.netlify.app/",
+        link:"https://app.studio.me",
         exp:"The project is a showcase all the works from 243 studio. Moving the mouse around allow the user to see all the works on over another. Clicking on an image will display more details about the project.",
         sourceCode: "https://github.com/243Studio/243studio"  
     },
@@ -24,8 +24,8 @@ export const myProject = [
     },
     {
         id: nanoid(),
-        title: "Pianos Notes Player",
-        description:"This is a simple piano notes projects",
+        title: "le petit piano de mag",
+        description:"mag's little piano",
         illustration:"https://github.com/243Studio/gif/raw/main/pianonotes.png",
         technologies: ["React","Vanilla Javascript", "CSS & HTML"],
         link: homeUrl + "/pianonotes/",
