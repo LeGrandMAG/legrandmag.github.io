@@ -4,7 +4,6 @@ import './Resume.css'
 
 import {SEWork, LeaderExp, OpenSourceContribution, cert, Awards, Projects} from '../../components/data'
 import nanoid from 'nano-id'
-import { Link } from 'react-router-dom'
 
 function Role(props){
   return(
@@ -93,7 +92,7 @@ const ProjectsElements = Projects.map((item) =>{
 key = {nanoid()}
 className='sectionx'>
         <p style={{textAlign:"left"}} key = {nanoid()}>{item.description}</p>
-        {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a className ="live-link" target='_blank' href={item.link}>LIVE VERSION</a></p>}
+        {item.link.length >0 && <p className="url-to-the-project" key = {nanoid()}><strong> </strong><a rel="noreferrer" className ="live-link" target='_blank' href={item.link}>LIVE VERSION</a></p>}
 
 </div>
   </div>  
@@ -164,10 +163,10 @@ className='section'>
         <div className='contact-container'>
           <div className="contact-info">
             <p>magmukendi0@gmail.com</p>
-            <p>Dongdaemun-gu, Seoul, South Korea</p>
+            <p>Repentigny, QC, Canada</p>
           </div>
           <div className='link-status'>
-            <a href="https://github.com/magmukendi" target='_blank'>github.com/magmukendi</a>
+            <a rel="noreferrer" href="https://github.com/magmukendi" target='_blank'>github.com/magmukendi</a>
 
             <p>Current visa status: <strong>D-10</strong></p>
             <p>

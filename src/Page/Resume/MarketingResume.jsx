@@ -109,10 +109,10 @@ className='section'>
             <p>Dongdaemun-gu, Seoul, South Korea</p>
           </div>
           <div className='link-status'>
-          <a href="https://linkedin.com/in/magmukendi" target='_blank'>linkedin.com/in/magmukendi</a>
+          <a rel="noreferrer" href="https://linkedin.com/in/magmukendi" target='_blank'>linkedin.com/in/magmukendi</a>
             <p>Current visa status: <strong>D-10</strong></p>
             <p>
-            TOPIK 4 | TOEIC 945
+            TOPIK 4
               </p>
           </div>
         </div>

@@ -40,7 +40,6 @@ body{
 
 .light{
   color: var(--dark);
-  background:white;
 }
 .dark{
   color: white;

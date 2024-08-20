@@ -15,6 +15,7 @@ function Home() {
           <p>Currently building <a rel="noreferrer"  target="_blank" href="https://poto.243studio.me">Pesa Poto Chance AI</a> and <a rel="noreferrer"  target="_blank" href="https://wepo.cc">wepo</a></p>
           <p><br/>Check out my blog, <a rel="noreferrer"  target="_blank" href="https://blog.magmukendi.com"><i>Le Coin Tech de Mag</i></a></p>
           <p style={{textAlign:'center'}}> <br/><br/><br/>Ha P to C U Here</p>
+
         
         </div>
     </div>

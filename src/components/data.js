@@ -295,7 +295,7 @@ export const Projects = [
         name: "243 Studio Portfolio",
         description: " A web app displaying all the works done by 243 Studio.",
         technology: "HTML, CSS & Vanilla Javascript",
-        link:"https://astonishing-piroshki-1236ad.netlify.app/"
+        link:"https://app.243studio.me"
     }, 
     {
         name: "Random Activities",
