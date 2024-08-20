@@ -1,4 +1,7 @@
 import {Link} from 'react-router-dom'
+import {useState} from 'react'
+import { Label } from '@mui/icons-material';
+import logo from "../assets/img/logo mag 3.png"
 
 /*This is the nav element of the app*/
 import './Component.css'
@@ -25,12 +28,15 @@ function Navbar(){
                 </div>
                 <p style={{color:"#051A36"}}>Dark</p>
     </div> */}
-            <ul>
+            <ul style={{display:'flex', flexDirection:'column'}}>
+                    <img style={{marginTop:"1rem", maxHeight:"20px",width:"auto"}} className = "anchor" src={logo}/>
+                    <hr/>
+                {/*
                 <NavElement 
                     name= "HOME"
                     link = ""
                 />
-                {/*<NavElement 
+                <NavElement 
                     name= "CULTURE"
                     link = "culture"
     />
@@ -45,12 +51,12 @@ function Navbar(){
                     name= "BLOG"
                     link = "blog/"
                 />
-                */}
+                
                 <NavElement 
                     name= "PROJECTS"
                     link = "projects"
                 />
-                {/*<NavElement
+                <NavElement
                 name="PROJECTS"
                 link = "Projects"
             />*/}

@@ -81,9 +81,12 @@ nav{
 
   /*Footer ========*/
 
+footer{
+  position: fixed;
+  bottom: 0px;
+
+}
 .footer{
-    position: relative;
-    bottom: 60%;
     width:100%;
     padding: 2rem 0rem 2rem 0rem;
     transition: 01s ease-in-out;

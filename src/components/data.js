@@ -17,7 +17,7 @@ export const SEWork = [
         company: "Naver Z (ZEPETO)",
         position:'World Platform - Software Engineer Intern',
         location: 'Seoul, South Korea',
-        date: 'July 2023 - Present',
+        date: 'July 2023 - September 2023',
         responsibilities: [
             "Added the QuickChat module to the Zepeto Module Importer",
             "Added new features to the Gesture Module",
